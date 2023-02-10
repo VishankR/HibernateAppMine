@@ -1,0 +1,250 @@
+[
+	{
+		"stringId" : 2,
+		"stringData" : "Northwind Traders"
+	},
+	{
+		"stringId" : 3,
+		"stringData" : "Cannot remove posted inventory!"
+	},
+	{
+		"stringId" : 4,
+		"stringData" : "Back ordered product filled for Order #|"
+	},
+	{
+		"stringId" : 5,
+		"stringData" : "Discounted price below cost!"
+	},
+	{
+		"stringId" : 6,
+		"stringData" : "Insufficient inventory."
+	},
+	{
+		"stringId" : 7,
+		"stringData" : "Insufficient inventory. Do you want to create a purchase order?"
+	},
+	{
+		"stringId" : 8,
+		"stringData" : "Purchase orders were successfully created for | products"
+	},
+	{
+		"stringId" : 9,
+		"stringData" : "There are no products below their respective reorder levels"
+	},
+	{
+		"stringId" : 10,
+		"stringData" : "Must specify customer name!"
+	},
+	{
+		"stringId" : 11,
+		"stringData" : "Restocking will generate purchase orders for all products below desired inventory levels.  Do you want to continue?"
+	},
+	{
+		"stringId" : 12,
+		"stringData" : "Cannot create purchase order.  No suppliers listed for specified product"
+	},
+	{
+		"stringId" : 13,
+		"stringData" : "Discounted price is below cost!"
+	},
+	{
+		"stringId" : 14,
+		"stringData" : "Do you want to continue?"
+	},
+	{
+		"stringId" : 15,
+		"stringData" : "Order is already invoiced. Do you want to print the invoice?"
+	},
+	{
+		"stringId" : 16,
+		"stringData" : "Order does not contain any line items"
+	},
+	{
+		"stringId" : 17,
+		"stringData" : "Cannot create invoice!  Inventory has not been allocated for each specified product."
+	},
+	{
+		"stringId" : 18,
+		"stringData" : "Sorry, there are no sales in the specified time period"
+	},
+	{
+		"stringId" : 19,
+		"stringData" : "Product successfully restocked."
+	},
+	{
+		"stringId" : 21,
+		"stringData" : "Product does not need restocking! Product is already at desired inventory level."
+	},
+	{
+		"stringId" : 22,
+		"stringData" : "Product restocking failed!"
+	},
+	{
+		"stringId" : 23,
+		"stringData" : "Invalid login specified!"
+	},
+	{
+		"stringId" : 24,
+		"stringData" : "Must first select reported!"
+	},
+	{
+		"stringId" : 25,
+		"stringData" : "Changing supplier will remove purchase line items, continue?"
+	},
+	{
+		"stringId" : 26,
+		"stringData" : "Purchase orders were successfully submitted for | products.  Do you want to view the restocking report?"
+	},
+	{
+		"stringId" : 27,
+		"stringData" : "There was an error attempting to restock inventory levels."
+	},
+	{
+		"stringId" : 28,
+		"stringData" : "| product(s) were successfully restocked.  Do you want to view the restocking report?"
+	},
+	{
+		"stringId" : 29,
+		"stringData" : "You cannot remove purchase line items already posted to inventory!"
+	},
+	{
+		"stringId" : 30,
+		"stringData" : "There was an error removing one or more purchase line items."
+	},
+	{
+		"stringId" : 31,
+		"stringData" : "You cannot modify quantity for purchased product already received or posted to inventory."
+	},
+	{
+		"stringId" : 32,
+		"stringData" : "You cannot modify price for purchased product already received or posted to inventory."
+	},
+	{
+		"stringId" : 33,
+		"stringData" : "Product has been successfully posted to inventory."
+	},
+	{
+		"stringId" : 34,
+		"stringData" : "Sorry, product cannot be successfully posted to inventory."
+	},
+	{
+		"stringId" : 35,
+		"stringData" : "There are orders with this product on back order.  Would you like to fill them now?"
+	},
+	{
+		"stringId" : 36,
+		"stringData" : "Cannot post product to inventory without specifying received date!"
+	},
+	{
+		"stringId" : 37,
+		"stringData" : "Do you want to post received product to inventory?"
+	},
+	{
+		"stringId" : 38,
+		"stringData" : "Initialize purchase, orders, and inventory data?"
+	},
+	{
+		"stringId" : 39,
+		"stringData" : "Must first specify employee name!"
+	},
+	{
+		"stringId" : 40,
+		"stringData" : "Specified user must be logged in to approve purchase!"
+	},
+	{
+		"stringId" : 41,
+		"stringData" : "Purchase order must contain completed line items before it can be approved"
+	},
+	{
+		"stringId" : 42,
+		"stringData" : "Sorry, you do not have permission to approve purchases."
+	},
+	{
+		"stringId" : 43,
+		"stringData" : "Purchase successfully approved"
+	},
+	{
+		"stringId" : 44,
+		"stringData" : "Purchase cannot be approved"
+	},
+	{
+		"stringId" : 45,
+		"stringData" : "Purchase successfully submitted for approval"
+	},
+	{
+		"stringId" : 46,
+		"stringData" : "Purchase cannot be submitted for approval"
+	},
+	{
+		"stringId" : 47,
+		"stringData" : "Sorry, purchase order does not contain line items"
+	},
+	{
+		"stringId" : 48,
+		"stringData" : "Do you want to cancel this order?"
+	},
+	{
+		"stringId" : 49,
+		"stringData" : "Canceling an order will permanently delete the order.  Are you sure you want to cancel?"
+	},
+	{
+		"stringId" : 100,
+		"stringData" : "Your order was successfully canceled."
+	},
+	{
+		"stringId" : 101,
+		"stringData" : "Cannot cancel an order that has items received and posted to inventory."
+	},
+	{
+		"stringId" : 102,
+		"stringData" : "There was an error trying to cancel this order."
+	},
+	{
+		"stringId" : 103,
+		"stringData" : "The invoice for this order has not yet been created."
+	},
+	{
+		"stringId" : 104,
+		"stringData" : "Shipping information is not complete.  Please specify all shipping information and try again."
+	},
+	{
+		"stringId" : 105,
+		"stringData" : "Cannot mark as shipped.  Order must first be invoiced!"
+	},
+	{
+		"stringId" : 106,
+		"stringData" : "Cannot cancel an order that has already shipped!"
+	},
+	{
+		"stringId" : 107,
+		"stringData" : "Must first specify salesperson!"
+	},
+	{
+		"stringId" : 108,
+		"stringData" : "Order is now marked closed."
+	},
+	{
+		"stringId" : 109,
+		"stringData" : "Order must first be marked shipped before closing."
+	},
+	{
+		"stringId" : 110,
+		"stringData" : "Must first specify payment information!"
+	},
+	{
+		"stringId" : 111,
+		"stringData" : "There was an error attempting to restock inventory levels.  | product(s) were successfully restocked."
+	},
+	{
+		"stringId" : 112,
+		"stringData" : "You must supply a Unit Cost."
+	},
+	{
+		"stringId" : 113,
+		"stringData" : "Fill back ordered product, Order #|"
+	},
+	{
+		"stringId" : 114,
+		"stringData" : "Purchase generated based on Order #|"
+	}
+]

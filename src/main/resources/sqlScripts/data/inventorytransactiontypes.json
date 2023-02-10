@@ -1,0 +1,18 @@
+[
+	{
+		"id" : 1,
+		"typeName" : "Purchased"
+	},
+	{
+		"id" : 2,
+		"typeName" : "Sold"
+	},
+	{
+		"id" : 3,
+		"typeName" : "On Hold"
+	},
+	{
+		"id" : 4,
+		"typeName" : "Waste"
+	}
+]
