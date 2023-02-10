@@ -1,31 +1,29 @@
 package entity.mapped_superclass;
 
-import entity.joined.OrderdetailsEntity;
+import entity.joined.SellorderdetailsEntity;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
-import javax.persistence.Table;
 import java.util.Collection;
 
 @Entity
-@Table(name = "orderdetailsstatus", schema = "northwind")
 public class OrderdetailsstatusEntity extends Status {
 
     @OneToMany(mappedBy = "orderdetailsstatusByStatusId")
-    private Collection<OrderdetailsEntity> orderdetailsById;
+    private Collection<SellorderdetailsEntity> sellOrderdetailsById;
 
-    public Collection<OrderdetailsEntity> getOrderdetailsById() {
-        return orderdetailsById;
+    public Collection<SellorderdetailsEntity> getSellOrderdetailsById() {
+        return sellOrderdetailsById;
     }
 
-    public void setOrderdetailsById(Collection<OrderdetailsEntity> orderdetailsById) {
-        this.orderdetailsById = orderdetailsById;
+    public void setSellOrderdetailsById(Collection<SellorderdetailsEntity> orderdetailsById) {
+        this.sellOrderdetailsById = orderdetailsById;
     }
 
     @Override
     public String toString() {
         return "OrderdetailsstatusEntity{" +
-                "orderdetailsById=" + orderdetailsById +
+                "sellOrderdetailsById=" + sellOrderdetailsById +
                 '}';
     }
 }

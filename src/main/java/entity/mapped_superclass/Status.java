@@ -4,6 +4,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+import java.util.Objects;
 
 /**
  * MappedSuperclass allows you to share the attribute definition between multiple entities. It maps each concrete class to its own table.
@@ -15,9 +16,11 @@ import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
 public abstract class Status {
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private int id;
+
     private String status;
 
     public int getId() {
@@ -34,5 +37,26 @@ public abstract class Status {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Status)) return false;
+        Status status1 = (Status) o;
+        return getId() == status1.getId() && Objects.equals(getStatus(), status1.getStatus());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getStatus());
+    }
+
+    @Override
+    public String toString() {
+        return "Status{" +
+                "id=" + id +
+                ", status='" + status + '\'' +
+                '}';
     }
 }

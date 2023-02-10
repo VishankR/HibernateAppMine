@@ -1,7 +1,6 @@
-package entity;
+package entity.concrete_class;
 
-import entity.concrete_class.InventorytransactionsEntity;
-import entity.joined.OrderdetailsEntity;
+import entity.joined.SellorderdetailsEntity;
 import entity.joined.PurchaseorderdetailsEntity;
 
 import javax.persistence.*;
@@ -11,7 +10,6 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
-@Table(name = "products", schema = "northwind")
 public class ProductsEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -32,7 +30,7 @@ public class ProductsEntity {
     @OneToMany(mappedBy = "productsByProductId")
     private Collection<InventorytransactionsEntity> inventorytransactionsById;
     @OneToMany(mappedBy = "productsByProductId")
-    private Collection<OrderdetailsEntity> orderdetailsById;
+    private Collection<SellorderdetailsEntity> sellOrderdetailsById;
     @OneToMany(mappedBy = "productsByProductId")
     private Collection<PurchaseorderdetailsEntity> purchaseorderdetailsById;
 
@@ -151,15 +149,15 @@ public class ProductsEntity {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof ProductsEntity)) return false;
         ProductsEntity that = (ProductsEntity) o;
-        return id == that.id && discontinued == that.discontinued && Objects.equals(supplierIds, that.supplierIds) && Objects.equals(productCode, that.productCode) && Objects.equals(productName, that.productName) && Objects.equals(description, that.description) && Objects.equals(standardCost, that.standardCost) && Objects.equals(listPrice, that.listPrice) && Objects.equals(reorderLevel, that.reorderLevel) && Objects.equals(targetLevel, that.targetLevel) && Objects.equals(quantityPerUnit, that.quantityPerUnit) && Objects.equals(minimumReorderQuantity, that.minimumReorderQuantity) && Objects.equals(category, that.category) && Arrays.equals(attachments, that.attachments);
+        return getId() == that.getId() && getDiscontinued() == that.getDiscontinued() && Objects.equals(getSupplierIds(), that.getSupplierIds()) && Objects.equals(getProductCode(), that.getProductCode()) && Objects.equals(getProductName(), that.getProductName()) && Objects.equals(getDescription(), that.getDescription()) && Objects.equals(getStandardCost(), that.getStandardCost()) && Objects.equals(getListPrice(), that.getListPrice()) && Objects.equals(getReorderLevel(), that.getReorderLevel()) && Objects.equals(getTargetLevel(), that.getTargetLevel()) && Objects.equals(getQuantityPerUnit(), that.getQuantityPerUnit()) && Objects.equals(getMinimumReorderQuantity(), that.getMinimumReorderQuantity()) && Objects.equals(getCategory(), that.getCategory()) && Arrays.equals(getAttachments(), that.getAttachments()) && Objects.equals(getInventorytransactionsById(), that.getInventorytransactionsById()) && Objects.equals(getSellOrderdetailsById(), that.getSellOrderdetailsById()) && Objects.equals(getPurchaseorderdetailsById(), that.getPurchaseorderdetailsById());
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(id, supplierIds, productCode, productName, description, standardCost, listPrice, reorderLevel, targetLevel, quantityPerUnit, discontinued, minimumReorderQuantity, category);
-        result = 31 * result + Arrays.hashCode(attachments);
+        int result = Objects.hash(getId(), getSupplierIds(), getProductCode(), getProductName(), getDescription(), getStandardCost(), getListPrice(), getReorderLevel(), getTargetLevel(), getQuantityPerUnit(), getDiscontinued(), getMinimumReorderQuantity(), getCategory(), getInventorytransactionsById(), getSellOrderdetailsById(), getPurchaseorderdetailsById());
+        result = 31 * result + Arrays.hashCode(getAttachments());
         return result;
     }
 
@@ -171,12 +169,12 @@ public class ProductsEntity {
         this.inventorytransactionsById = inventorytransactionsById;
     }
 
-    public Collection<OrderdetailsEntity> getOrderdetailsById() {
-        return orderdetailsById;
+    public Collection<SellorderdetailsEntity> getSellOrderdetailsById() {
+        return sellOrderdetailsById;
     }
 
-    public void setOrderdetailsById(Collection<OrderdetailsEntity> orderdetailsById) {
-        this.orderdetailsById = orderdetailsById;
+    public void setSellOrderdetailsById(Collection<SellorderdetailsEntity> sellOrderdetailsById) {
+        this.sellOrderdetailsById = sellOrderdetailsById;
     }
 
     public Collection<PurchaseorderdetailsEntity> getPurchaseorderdetailsById() {
@@ -205,7 +203,7 @@ public class ProductsEntity {
                 ", category='" + category + '\'' +
                 ", attachments=" + Arrays.toString(attachments) +
                 ", inventorytransactionsById=" + inventorytransactionsById +
-                ", orderdetailsById=" + orderdetailsById +
+                ", sellOrderdetailsById=" + sellOrderdetailsById +
                 ", purchaseorderdetailsById=" + purchaseorderdetailsById +
                 '}';
     }

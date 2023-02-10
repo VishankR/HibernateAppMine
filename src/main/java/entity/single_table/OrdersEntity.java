@@ -1,7 +1,7 @@
 package entity.single_table;
 
 import entity.concrete_class.InventorytransactionsEntity;
-import entity.joined.OrderdetailsEntity;
+import entity.joined.SellorderdetailsEntity;
 import entity.mapped_superclass.OrdersstatusEntity;
 
 import javax.persistence.*;
@@ -21,7 +21,6 @@ import java.util.Objects;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "OrderType")
-@Table(name = "orders", schema = "northwind")
 public abstract class OrdersEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -32,10 +31,10 @@ public abstract class OrdersEntity {
     private String paymentMethod;
     private Timestamp paymentDate;
     private String notes;
-    @OneToMany(mappedBy = "ordersByCustomerOrderId")
+    @OneToMany(mappedBy = "sellOrdersByCustomerOrderId")
     private Collection<InventorytransactionsEntity> inventorytransactionsById;
-    @OneToMany(mappedBy = "ordersByOrderId")
-    private Collection<OrderdetailsEntity> orderdetailsById;
+    @OneToMany(mappedBy = "sellOrdersByOrderId")
+    private Collection<SellorderdetailsEntity> sellOrderdetailsById;
     @ManyToOne
     @JoinColumn(name = "statusId", referencedColumnName = "id")
     private OrdersstatusEntity ordersstatusByStatusId;
@@ -99,14 +98,14 @@ public abstract class OrdersEntity {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof OrdersEntity)) return false;
         OrdersEntity that = (OrdersEntity) o;
-        return id == that.id && Objects.equals(orderDate, that.orderDate) && Objects.equals(shippingFee, that.shippingFee) && Objects.equals(taxes, that.taxes) && Objects.equals(paymentMethod, that.paymentMethod) && Objects.equals(paymentDate, that.paymentDate) && Objects.equals(notes, that.notes);
+        return getId() == that.getId() && Objects.equals(getOrderDate(), that.getOrderDate()) && Objects.equals(getShippingFee(), that.getShippingFee()) && Objects.equals(getTaxes(), that.getTaxes()) && Objects.equals(getPaymentMethod(), that.getPaymentMethod()) && Objects.equals(getPaymentDate(), that.getPaymentDate()) && Objects.equals(getNotes(), that.getNotes()) && Objects.equals(getInventorytransactionsById(), that.getInventorytransactionsById()) && Objects.equals(getSellOrderdetailsById(), that.getSellOrderdetailsById()) && Objects.equals(getOrdersstatusByStatusId(), that.getOrdersstatusByStatusId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, orderDate, shippingFee, taxes, paymentMethod, paymentDate, notes);
+        return Objects.hash(getId(), getOrderDate(), getShippingFee(), getTaxes(), getPaymentMethod(), getPaymentDate(), getNotes(), getInventorytransactionsById(), getSellOrderdetailsById(), getOrdersstatusByStatusId());
     }
 
     public Collection<InventorytransactionsEntity> getInventorytransactionsById() {
@@ -117,12 +116,12 @@ public abstract class OrdersEntity {
         this.inventorytransactionsById = inventorytransactionsById;
     }
 
-    public Collection<OrderdetailsEntity> getOrderdetailsById() {
-        return orderdetailsById;
+    public Collection<SellorderdetailsEntity> getSellOrderdetailsById() {
+        return sellOrderdetailsById;
     }
 
-    public void setOrderdetailsById(Collection<OrderdetailsEntity> orderdetailsById) {
-        this.orderdetailsById = orderdetailsById;
+    public void setSellOrderdetailsById(Collection<SellorderdetailsEntity> orderdetailsById) {
+        this.sellOrderdetailsById = orderdetailsById;
     }
 
     public OrdersstatusEntity getOrdersstatusByStatusId() {
@@ -140,10 +139,12 @@ public abstract class OrdersEntity {
                 ", orderDate=" + orderDate +
                 ", shippingFee=" + shippingFee +
                 ", taxes=" + taxes +
+                ", paymentMethod='" + paymentMethod + '\'' +
+                ", paymentDate=" + paymentDate +
                 ", notes='" + notes + '\'' +
                 ", inventorytransactionsById=" + inventorytransactionsById +
-                ", orderdetailsById=" + orderdetailsById +
-                ", ordersstatusByStatusId=" + ordersstatusByStatusId.getId() +
+                ", sellOrderdetailsById=" + sellOrderdetailsById +
+                ", ordersstatusByStatusId=" + ordersstatusByStatusId +
                 '}';
     }
 }

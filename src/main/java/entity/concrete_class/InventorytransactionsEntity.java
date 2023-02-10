@@ -1,9 +1,9 @@
 package entity.concrete_class;
 
-import entity.ProductsEntity;
 import entity.joined.PurchaseorderdetailsEntity;
 import entity.single_table.OrdersEntity;
 import entity.single_table.PurchaseordersEntity;
+import entity.single_table.SellOrdersEntity;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -11,7 +11,6 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
-@Table(name = "inventorytransactions", schema = "northwind")
 public class InventorytransactionsEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -31,7 +30,7 @@ public class InventorytransactionsEntity {
     private PurchaseordersEntity purchaseordersByPurchaseOrderId;
     @ManyToOne
     @JoinColumn(name = "customerOrderId", referencedColumnName = "id")
-    private OrdersEntity ordersByCustomerOrderId;
+    private SellOrdersEntity sellOrdersByCustomerOrderId;
     @OneToMany(mappedBy = "inventorytransactionsByInventoryId")
     private Collection<PurchaseorderdetailsEntity> purchaseorderdetailsById;
 
@@ -78,14 +77,14 @@ public class InventorytransactionsEntity {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof InventorytransactionsEntity)) return false;
         InventorytransactionsEntity that = (InventorytransactionsEntity) o;
-        return id == that.id && quantity == that.quantity && Objects.equals(transactionCreatedDate, that.transactionCreatedDate) && Objects.equals(transactionModifiedDate, that.transactionModifiedDate) && Objects.equals(comments, that.comments);
+        return getId() == that.getId() && getQuantity() == that.getQuantity() && Objects.equals(getTransactionCreatedDate(), that.getTransactionCreatedDate()) && Objects.equals(getTransactionModifiedDate(), that.getTransactionModifiedDate()) && Objects.equals(getComments(), that.getComments()) && Objects.equals(getInventorytransactiontypesByTransactionType(), that.getInventorytransactiontypesByTransactionType()) && Objects.equals(getProductsByProductId(), that.getProductsByProductId()) && Objects.equals(getPurchaseordersByPurchaseOrderId(), that.getPurchaseordersByPurchaseOrderId()) && Objects.equals(getSellOrdersByCustomerOrderId(), that.getSellOrdersByCustomerOrderId()) && Objects.equals(getPurchaseorderdetailsById(), that.getPurchaseorderdetailsById());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, transactionCreatedDate, transactionModifiedDate, quantity, comments);
+        return Objects.hash(getId(), getTransactionCreatedDate(), getTransactionModifiedDate(), getQuantity(), getComments(), getInventorytransactiontypesByTransactionType(), getProductsByProductId(), getPurchaseordersByPurchaseOrderId(), getSellOrdersByCustomerOrderId(), getPurchaseorderdetailsById());
     }
 
     public InventorytransactiontypesEntity getInventorytransactiontypesByTransactionType() {
@@ -112,12 +111,12 @@ public class InventorytransactionsEntity {
         this.purchaseordersByPurchaseOrderId = purchaseordersByPurchaseOrderId;
     }
 
-    public OrdersEntity getOrdersByCustomerOrderId() {
-        return ordersByCustomerOrderId;
+    public OrdersEntity getSellOrdersByCustomerOrderId() {
+        return sellOrdersByCustomerOrderId;
     }
 
-    public void setOrdersByCustomerOrderId(OrdersEntity ordersByCustomerOrderId) {
-        this.ordersByCustomerOrderId = ordersByCustomerOrderId;
+    public void setSellOrdersByCustomerOrderId(SellOrdersEntity sellOrdersByCustomerOrderId) {
+        this.sellOrdersByCustomerOrderId = sellOrdersByCustomerOrderId;
     }
 
     public Collection<PurchaseorderdetailsEntity> getPurchaseorderdetailsById() {
@@ -136,10 +135,10 @@ public class InventorytransactionsEntity {
                 ", transactionModifiedDate=" + transactionModifiedDate +
                 ", quantity=" + quantity +
                 ", comments='" + comments + '\'' +
-                ", inventorytransactiontypesByTransactionType=" + inventorytransactiontypesByTransactionType.getId() +
-                ", productsByProductId=" + productsByProductId.getId() +
-                ", purchaseordersByPurchaseOrderId=" + purchaseordersByPurchaseOrderId.getId() +
-                ", ordersByCustomerOrderId=" + ordersByCustomerOrderId.getId() +
+                ", inventorytransactiontypesByTransactionType=" + inventorytransactiontypesByTransactionType +
+                ", productsByProductId=" + productsByProductId +
+                ", purchaseordersByPurchaseOrderId=" + purchaseordersByPurchaseOrderId +
+                ", sellOrdersByCustomerOrderId=" + sellOrdersByCustomerOrderId +
                 ", purchaseorderdetailsById=" + purchaseorderdetailsById +
                 '}';
     }

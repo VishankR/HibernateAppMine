@@ -5,7 +5,6 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
-@Table(name = "inventorytransactiontypes", schema = "northwind")
 public class InventorytransactiontypesEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -33,14 +32,14 @@ public class InventorytransactiontypesEntity {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof InventorytransactiontypesEntity)) return false;
         InventorytransactiontypesEntity that = (InventorytransactiontypesEntity) o;
-        return id == that.id && Objects.equals(typeName, that.typeName);
+        return getId() == that.getId() && Objects.equals(getTypeName(), that.getTypeName()) && Objects.equals(getInventorytransactionsById(), that.getInventorytransactionsById());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, typeName);
+        return Objects.hash(getId(), getTypeName(), getInventorytransactionsById());
     }
 
     public Collection<InventorytransactionsEntity> getInventorytransactionsById() {

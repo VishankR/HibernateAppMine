@@ -1,16 +1,16 @@
 package entity.joined;
 
-import entity.ProductsEntity;
 import entity.concrete_class.InventorytransactionsEntity;
+import entity.concrete_class.ProductsEntity;
 import entity.single_table.PurchaseordersEntity;
 
-import javax.persistence.*;
-import java.math.BigDecimal;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
-@Table(name = "purchaseorderdetails", schema = "northwind")
 public class PurchaseorderdetailsEntity extends Detail{
     private Timestamp dateReceived;
     private byte postedToInventory;
@@ -43,14 +43,15 @@ public class PurchaseorderdetailsEntity extends Detail{
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof PurchaseorderdetailsEntity)) return false;
+        if (!super.equals(o)) return false;
         PurchaseorderdetailsEntity that = (PurchaseorderdetailsEntity) o;
-        return postedToInventory == that.postedToInventory && Objects.equals(dateReceived, that.dateReceived);
+        return getPostedToInventory() == that.getPostedToInventory() && Objects.equals(getDateReceived(), that.getDateReceived()) && Objects.equals(getPurchaseordersByPurchaseOrderId(), that.getPurchaseordersByPurchaseOrderId()) && Objects.equals(getProductsByProductId(), that.getProductsByProductId()) && Objects.equals(getInventorytransactionsByInventoryId(), that.getInventorytransactionsByInventoryId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash( dateReceived, postedToInventory);
+        return Objects.hash(super.hashCode(), getDateReceived(), getPostedToInventory(), getPurchaseordersByPurchaseOrderId(), getProductsByProductId(), getInventorytransactionsByInventoryId());
     }
 
     public PurchaseordersEntity getPurchaseordersByPurchaseOrderId() {
@@ -80,11 +81,11 @@ public class PurchaseorderdetailsEntity extends Detail{
     @Override
     public String toString() {
         return "PurchaseorderdetailsEntity{" +
-                ", dateReceived=" + dateReceived +
+                "dateReceived=" + dateReceived +
                 ", postedToInventory=" + postedToInventory +
-                ", purchaseordersByPurchaseOrderId=" + purchaseordersByPurchaseOrderId.getId() +
-                ", productsByProductId=" + productsByProductId.getId() +
-                ", inventorytransactionsByInventoryId=" + inventorytransactionsByInventoryId.getId() +
+                ", purchaseordersByPurchaseOrderId=" + purchaseordersByPurchaseOrderId +
+                ", productsByProductId=" + productsByProductId +
+                ", inventorytransactionsByInventoryId=" + inventorytransactionsByInventoryId +
                 '}';
     }
 }

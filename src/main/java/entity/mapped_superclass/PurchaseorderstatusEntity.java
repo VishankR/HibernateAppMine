@@ -4,14 +4,12 @@ import entity.single_table.PurchaseordersEntity;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
-import javax.persistence.Table;
 import java.util.Collection;
 
 @Entity
-@Table(name = "purchaseorderstatus", schema = "northwind")
 public class PurchaseorderstatusEntity extends Status {
 
-    @OneToMany(mappedBy = "purchaseorderstatusByStatusId")
+    @OneToMany(mappedBy = "ordersstatusByStatusId")
     private Collection<PurchaseordersEntity> purchaseordersById;
 
     public Collection<PurchaseordersEntity> getPurchaseordersById() {

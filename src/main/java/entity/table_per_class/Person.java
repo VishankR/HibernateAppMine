@@ -13,25 +13,43 @@ import java.util.Arrays;
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Person {
+
     @GeneratedValue(strategy = GenerationType.TABLE)
     @Id
     private int id;
+
     private String company;
+
     private String lastName;
+
     private String firstName;
+
     private String emailAddress;
+
     private String jobTitle;
+
     private String businessPhone;
+
     private String homePhone;
+
     private String mobilePhone;
+
     private String faxNumber;
+
     private String address;
+
     private String city;
+
     private String stateProvince;
+
     private String zipPostalCode;
+
     private String countryRegion;
+
     private String webPage;
+
     private String notes;
+
     private byte[] attachments;
 
     public int getId() {

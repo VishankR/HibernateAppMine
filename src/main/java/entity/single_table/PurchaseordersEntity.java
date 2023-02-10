@@ -3,14 +3,16 @@ package entity.single_table;
 import entity.table_per_class.EmployeesEntity;
 import entity.table_per_class.SuppliersEntity;
 
-import javax.persistence.*;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
 @DiscriminatorValue("PURCHASE")
-@Table(name = "purchaseorders", schema = "northwind")
 public class PurchaseordersEntity extends OrdersEntity {
     private Timestamp submittedDate;
     private Timestamp creationDate;
@@ -85,14 +87,15 @@ public class PurchaseordersEntity extends OrdersEntity {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof PurchaseordersEntity)) return false;
+        if (!super.equals(o)) return false;
         PurchaseordersEntity that = (PurchaseordersEntity) o;
-        return  Objects.equals(submittedDate, that.submittedDate) && Objects.equals(creationDate, that.creationDate) && Objects.equals(expectedDate, that.expectedDate) && Objects.equals(paymentAmount, that.paymentAmount) && Objects.equals(approvedBy, that.approvedBy) && Objects.equals(approvedDate, that.approvedDate) && Objects.equals(submittedBy, that.submittedBy);
+        return Objects.equals(getSubmittedDate(), that.getSubmittedDate()) && Objects.equals(getCreationDate(), that.getCreationDate()) && Objects.equals(getExpectedDate(), that.getExpectedDate()) && Objects.equals(getPaymentAmount(), that.getPaymentAmount()) && Objects.equals(getApprovedBy(), that.getApprovedBy()) && Objects.equals(getApprovedDate(), that.getApprovedDate()) && Objects.equals(getSubmittedBy(), that.getSubmittedBy()) && Objects.equals(getSuppliersBySupplierId(), that.getSuppliersBySupplierId()) && Objects.equals(getEmployeesByCreatedBy(), that.getEmployeesByCreatedBy());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(submittedDate, creationDate, expectedDate, paymentAmount, approvedBy, approvedDate, submittedBy);
+        return Objects.hash(super.hashCode(), getSubmittedDate(), getCreationDate(), getExpectedDate(), getPaymentAmount(), getApprovedBy(), getApprovedDate(), getSubmittedBy(), getSuppliersBySupplierId(), getEmployeesByCreatedBy());
     }
 
     public SuppliersEntity getSuppliersBySupplierId() {
@@ -114,15 +117,15 @@ public class PurchaseordersEntity extends OrdersEntity {
     @Override
     public String toString() {
         return "PurchaseordersEntity{" +
-                ", submittedDate=" + submittedDate +
+                "submittedDate=" + submittedDate +
                 ", creationDate=" + creationDate +
                 ", expectedDate=" + expectedDate +
                 ", paymentAmount=" + paymentAmount +
                 ", approvedBy=" + approvedBy +
                 ", approvedDate=" + approvedDate +
                 ", submittedBy=" + submittedBy +
-                ", suppliersBySupplierId=" + suppliersBySupplierId.getId() +
-                ", employeesByCreatedBy=" + employeesByCreatedBy.getId() +
+                ", suppliersBySupplierId=" + suppliersBySupplierId +
+                ", employeesByCreatedBy=" + employeesByCreatedBy +
                 '}';
     }
 }

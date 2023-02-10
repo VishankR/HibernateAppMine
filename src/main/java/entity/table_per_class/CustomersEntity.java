@@ -1,30 +1,29 @@
 package entity.table_per_class;
 
 import entity.single_table.OrdersEntity;
+import entity.single_table.SellOrdersEntity;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
-import javax.persistence.Table;
 import java.util.Collection;
 
 @Entity
-@Table(name = "customers", schema = "northwind")
 public class CustomersEntity extends Person{
     @OneToMany(mappedBy = "customersByCustomerId")
-    private Collection<OrdersEntity> ordersById;
+    private Collection<SellOrdersEntity> sellOrdersById;
 
-    public Collection<OrdersEntity> getOrdersById() {
-        return ordersById;
+    public Collection<SellOrdersEntity> getSellOrdersById() {
+        return sellOrdersById;
     }
 
-    public void setOrdersById(Collection<OrdersEntity> ordersById) {
-        this.ordersById = ordersById;
+    public void setSellOrdersById(Collection<SellOrdersEntity> ordersById) {
+        this.sellOrdersById = ordersById;
     }
 
     @Override
     public String toString() {
         return "CustomersEntity{" +
-                " ordersById=" + ordersById +
+                "sellOrdersById=" + sellOrdersById +
                 '}';
     }
 }

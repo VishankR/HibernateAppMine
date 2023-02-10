@@ -1,6 +1,7 @@
 package entity.concrete_class;
 
 import entity.single_table.OrdersEntity;
+import entity.single_table.SellOrdersEntity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -8,8 +9,6 @@ import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
-/*@Polymorphism(type = PolymorphismType.EXPLICIT)*/
-@Table(name = "invoices", schema = "northwind")
 public class InvoicesEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -21,7 +20,7 @@ public class InvoicesEntity {
     private BigDecimal amountDue;
     @ManyToOne
     @JoinColumn(name = "orderId", referencedColumnName = "id")
-    private OrdersEntity ordersByOrderId;
+    private SellOrdersEntity sellOrdersByOrderId;
 
     public int getId() {
         return id;
@@ -74,35 +73,34 @@ public class InvoicesEntity {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof InvoicesEntity)) return false;
         InvoicesEntity that = (InvoicesEntity) o;
-        return id == that.id /*&& Objects.equals(orderId, that.orderId)*/ && Objects.equals(invoiceDate, that.invoiceDate) && Objects.equals(dueDate, that.dueDate) && Objects.equals(tax, that.tax) && Objects.equals(shipping, that.shipping) && Objects.equals(amountDue, that.amountDue);
+        return getId() == that.getId() && Objects.equals(getInvoiceDate(), that.getInvoiceDate()) && Objects.equals(getDueDate(), that.getDueDate()) && Objects.equals(getTax(), that.getTax()) && Objects.equals(getShipping(), that.getShipping()) && Objects.equals(getAmountDue(), that.getAmountDue()) && Objects.equals(getSellOrdersByOrderId(), that.getSellOrdersByOrderId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id/*, orderId*/, invoiceDate, dueDate, tax, shipping, amountDue);
+        return Objects.hash(getId(), getInvoiceDate(), getDueDate(), getTax(), getShipping(), getAmountDue(), getSellOrdersByOrderId());
     }
 
-    public OrdersEntity getOrdersByOrderId() {
-        return ordersByOrderId;
+    public OrdersEntity getSellOrdersByOrderId() {
+        return sellOrdersByOrderId;
     }
 
-    public void setOrdersByOrderId(OrdersEntity ordersByOrderId) {
-        this.ordersByOrderId = ordersByOrderId;
+    public void setSellOrdersByOrderId(SellOrdersEntity sellOrdersByOrderId) {
+        this.sellOrdersByOrderId = sellOrdersByOrderId;
     }
 
     @Override
     public String toString() {
         return "InvoicesEntity{" +
                 "id=" + id +
-                /*", orderId=" + orderId +*/
                 ", invoiceDate=" + invoiceDate +
                 ", dueDate=" + dueDate +
                 ", tax=" + tax +
                 ", shipping=" + shipping +
                 ", amountDue=" + amountDue +
-                ", ordersByOrderId=" + ordersByOrderId.getId() +
+                ", sellOrdersByOrderId=" + sellOrdersByOrderId +
                 '}';
     }
 }

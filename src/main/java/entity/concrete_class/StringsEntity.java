@@ -1,10 +1,12 @@
 package entity.concrete_class;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
-@Table(name = "strings", schema = "northwind")
 public class StringsEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -30,14 +32,14 @@ public class StringsEntity {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof StringsEntity)) return false;
         StringsEntity that = (StringsEntity) o;
-        return stringId == that.stringId && Objects.equals(stringData, that.stringData);
+        return getStringId() == that.getStringId() && Objects.equals(getStringData(), that.getStringData());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(stringId, stringData);
+        return Objects.hash(getStringId(), getStringData());
     }
 
     @Override
