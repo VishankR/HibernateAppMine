@@ -1,16 +1,16 @@
 package entity.joined;
 
+import entity.concrete_class.ProductsEntity;
 import entity.mapped_superclass.OrderdetailsstatusEntity;
-import entity.ProductsEntity;
 import entity.single_table.OrdersEntity;
 
-import javax.persistence.*;
-import java.math.BigDecimal;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
-@Table(name = "orderdetails", schema = "northwind")
 public class OrderdetailsEntity extends Detail{
     private double discount;
     private Timestamp dateAllocated;
