@@ -14,7 +14,7 @@ import java.util.Objects;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-public abstract class Detail {
+public abstract class DetailEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private int id;
@@ -26,6 +26,8 @@ public abstract class Detail {
     private BigDecimal unitPrice;
 
     private Integer inventoryId;
+
+    private String detailEntity = "DetailEntity";
 
     public int getId() {
         return id;
@@ -67,27 +69,36 @@ public abstract class Detail {
         this.inventoryId = inventoryId;
     }
 
+    public String getDetailEntity() {
+        return detailEntity;
+    }
+
+    public void setDetailEntity(String detailEntity) {
+        this.detailEntity = detailEntity;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Detail)) return false;
-        Detail detail = (Detail) o;
-        return getId() == detail.getId() && Objects.equals(getOrderId(), detail.getOrderId()) && Objects.equals(getQuantity(), detail.getQuantity()) && Objects.equals(getUnitPrice(), detail.getUnitPrice()) && Objects.equals(getInventoryId(), detail.getInventoryId());
+        if (!(o instanceof DetailEntity)) return false;
+        DetailEntity that = (DetailEntity) o;
+        return getId() == that.getId() && Objects.equals(getOrderId(), that.getOrderId()) && Objects.equals(getQuantity(), that.getQuantity()) && Objects.equals(getUnitPrice(), that.getUnitPrice()) && Objects.equals(getInventoryId(), that.getInventoryId()) && Objects.equals(getDetailEntity(), that.getDetailEntity());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getOrderId(), getQuantity(), getUnitPrice(), getInventoryId());
+        return Objects.hash(getId(), getOrderId(), getQuantity(), getUnitPrice(), getInventoryId(), getDetailEntity());
     }
 
     @Override
     public String toString() {
-        return "Detail{" +
+        return "DetailEntity{" +
                 "id=" + id +
                 ", orderId=" + orderId +
                 ", quantity=" + quantity +
                 ", unitPrice=" + unitPrice +
                 ", inventoryId=" + inventoryId +
+                ", detailEntity='" + detailEntity + '\'' +
                 '}';
     }
 }

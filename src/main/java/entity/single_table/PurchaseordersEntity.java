@@ -21,6 +21,7 @@ public class PurchaseordersEntity extends OrdersEntity {
     private Integer approvedBy;
     private Timestamp approvedDate;
     private Integer submittedBy;
+    private String purchaseOrdersEntity = "PurchaseOrdersEntity";
     @ManyToOne
     @JoinColumn(name = "supplierId", referencedColumnName = "id")
     private SuppliersEntity suppliersBySupplierId;
@@ -90,12 +91,12 @@ public class PurchaseordersEntity extends OrdersEntity {
         if (!(o instanceof PurchaseordersEntity)) return false;
         if (!super.equals(o)) return false;
         PurchaseordersEntity that = (PurchaseordersEntity) o;
-        return Objects.equals(getSubmittedDate(), that.getSubmittedDate()) && Objects.equals(getCreationDate(), that.getCreationDate()) && Objects.equals(getExpectedDate(), that.getExpectedDate()) && Objects.equals(getPaymentAmount(), that.getPaymentAmount()) && Objects.equals(getApprovedBy(), that.getApprovedBy()) && Objects.equals(getApprovedDate(), that.getApprovedDate()) && Objects.equals(getSubmittedBy(), that.getSubmittedBy()) && Objects.equals(getSuppliersBySupplierId(), that.getSuppliersBySupplierId()) && Objects.equals(getEmployeesByCreatedBy(), that.getEmployeesByCreatedBy());
+        return Objects.equals(getSubmittedDate(), that.getSubmittedDate()) && Objects.equals(getCreationDate(), that.getCreationDate()) && Objects.equals(getExpectedDate(), that.getExpectedDate()) && Objects.equals(getPaymentAmount(), that.getPaymentAmount()) && Objects.equals(getApprovedBy(), that.getApprovedBy()) && Objects.equals(getApprovedDate(), that.getApprovedDate()) && Objects.equals(getSubmittedBy(), that.getSubmittedBy()) && Objects.equals(purchaseOrdersEntity, that.purchaseOrdersEntity) && Objects.equals(getSuppliersBySupplierId(), that.getSuppliersBySupplierId()) && Objects.equals(getEmployeesByCreatedBy(), that.getEmployeesByCreatedBy());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), getSubmittedDate(), getCreationDate(), getExpectedDate(), getPaymentAmount(), getApprovedBy(), getApprovedDate(), getSubmittedBy(), getSuppliersBySupplierId(), getEmployeesByCreatedBy());
+        return Objects.hash(super.hashCode(), getSubmittedDate(), getCreationDate(), getExpectedDate(), getPaymentAmount(), getApprovedBy(), getApprovedDate(), getSubmittedBy(), purchaseOrdersEntity, getSuppliersBySupplierId(), getEmployeesByCreatedBy());
     }
 
     public SuppliersEntity getSuppliersBySupplierId() {
@@ -124,6 +125,7 @@ public class PurchaseordersEntity extends OrdersEntity {
                 ", approvedBy=" + approvedBy +
                 ", approvedDate=" + approvedDate +
                 ", submittedBy=" + submittedBy +
+                ", purchaseOrdersEntity='" + purchaseOrdersEntity + '\'' +
                 ", suppliersBySupplierId=" + suppliersBySupplierId +
                 ", employeesByCreatedBy=" + employeesByCreatedBy +
                 '}';

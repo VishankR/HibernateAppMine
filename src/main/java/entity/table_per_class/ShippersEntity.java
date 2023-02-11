@@ -9,6 +9,7 @@ import java.util.Collection;
 
 @Entity
 public class ShippersEntity extends Person {
+    private String shippersEntity = "ShippersEntity";
     @OneToMany(mappedBy = "shippersByShipperId")
     private Collection<SellOrdersEntity> sellOrdersById;
 
@@ -20,10 +21,19 @@ public class ShippersEntity extends Person {
         this.sellOrdersById = ordersById;
     }
 
+    public String getShippersEntity() {
+        return shippersEntity;
+    }
+
+    public void setShippersEntity(String shippersEntity) {
+        this.shippersEntity = shippersEntity;
+    }
+
     @Override
     public String toString() {
         return "ShippersEntity{" +
-                "sellOrdersById=" + sellOrdersById +
+                "shippersEntity='" + shippersEntity + '\'' +
+                ", sellOrdersById=" + sellOrdersById +
                 '}';
     }
 }

@@ -1,6 +1,5 @@
 [
 	{
-		"id" : 1,
 		"supplierIds" : "4",
 		"productCode" : "NWTB-1",
 		"productName" : "Northwind Traders Chai",
@@ -13,10 +12,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Beverages",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 3,
 		"supplierIds" : "10",
 		"productCode" : "NWTCO-3",
 		"productName" : "Northwind Traders Syrup",
@@ -29,10 +27,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Condiments",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 4,
 		"supplierIds" : "10",
 		"productCode" : "NWTCO-4",
 		"productName" : "Northwind Traders Cajun Seasoning",
@@ -45,10 +42,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Condiments",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 5,
 		"supplierIds" : "10",
 		"productCode" : "NWTO-5",
 		"productName" : "Northwind Traders Olive Oil",
@@ -61,10 +57,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Oil",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 6,
 		"supplierIds" : "26",
 		"productCode" : "NWTJP-6",
 		"productName" : "Northwind Traders Boysenberry Spread",
@@ -77,10 +72,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Jams, Preserves",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 7,
 		"supplierIds" : "2",
 		"productCode" : "NWTDFN-7",
 		"productName" : "Northwind Traders Dried Pears",
@@ -93,10 +87,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Dried Fruit & Nuts",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 8,
 		"supplierIds" : "8",
 		"productCode" : "NWTS-8",
 		"productName" : "Northwind Traders Curry Sauce",
@@ -109,10 +102,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Sauces",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 14,
 		"supplierIds" : "26",
 		"productCode" : "NWTDFN-14",
 		"productName" : "Northwind Traders Walnuts",
@@ -125,10 +117,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Dried Fruit & Nuts",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 17,
 		"supplierIds" : "6",
 		"productCode" : "NWTCFV-17",
 		"productName" : "Northwind Traders Fruit Cocktail",
@@ -141,10 +132,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 19,
 		"supplierIds" : "1",
 		"productCode" : "NWTBGM-19",
 		"productName" : "Northwind Traders Chocolate Biscuits Mix",
@@ -157,10 +147,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 5,
 		"category" : "Baked Goods & Mixes",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 20,
 		"supplierIds" : "26",
 		"productCode" : "NWTJP-6",
 		"productName" : "Northwind Traders Marmalade",
@@ -173,10 +162,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Jams, Preserves",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 21,
 		"supplierIds" : "1",
 		"productCode" : "NWTBGM-21",
 		"productName" : "Northwind Traders Scones",
@@ -189,10 +177,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 5,
 		"category" : "Baked Goods & Mixes",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 34,
 		"supplierIds" : "4",
 		"productCode" : "NWTB-34",
 		"productName" : "Northwind Traders Beer",
@@ -205,10 +192,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 15,
 		"category" : "Beverages",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 40,
 		"supplierIds" : "7",
 		"productCode" : "NWTCM-40",
 		"productName" : "Northwind Traders Crab Meat",
@@ -221,10 +207,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 30,
 		"category" : "Canned Meat",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 41,
 		"supplierIds" : "6",
 		"productCode" : "NWTSO-41",
 		"productName" : "Northwind Traders Clam Chowder",
@@ -237,10 +222,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Soups",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 43,
 		"supplierIds" : "34",
 		"productCode" : "NWTB-43",
 		"productName" : "Northwind Traders Coffee",
@@ -253,10 +237,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Beverages",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 48,
 		"supplierIds" : "10",
 		"productCode" : "NWTCA-48",
 		"productName" : "Northwind Traders Chocolate",
@@ -269,10 +252,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Candy",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 51,
 		"supplierIds" : "2",
 		"productCode" : "NWTDFN-51",
 		"productName" : "Northwind Traders Dried Apples",
@@ -285,10 +267,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Dried Fruit & Nuts",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 52,
 		"supplierIds" : "1",
 		"productCode" : "NWTG-52",
 		"productName" : "Northwind Traders Long Grain Rice",
@@ -301,10 +282,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Grains",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 56,
 		"supplierIds" : "1",
 		"productCode" : "NWTP-56",
 		"productName" : "Northwind Traders Gnocchi",
@@ -317,10 +297,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 30,
 		"category" : "Pasta",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 57,
 		"supplierIds" : "1",
 		"productCode" : "NWTP-57",
 		"productName" : "Northwind Traders Ravioli",
@@ -333,10 +312,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 20,
 		"category" : "Pasta",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 65,
 		"supplierIds" : "8",
 		"productCode" : "NWTS-65",
 		"productName" : "Northwind Traders Hot Pepper Sauce",
@@ -349,10 +327,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Sauces",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 66,
 		"supplierIds" : "8",
 		"productCode" : "NWTS-66",
 		"productName" : "Northwind Traders Tomato Sauce",
@@ -365,10 +342,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 20,
 		"category" : "Sauces",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 72,
 		"supplierIds" : "5",
 		"productCode" : "NWTD-72",
 		"productName" : "Northwind Traders Mozzarella",
@@ -381,10 +357,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Dairy products",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 74,
 		"supplierIds" : "26",
 		"productCode" : "NWTDFN-74",
 		"productName" : "Northwind Traders Almonds",
@@ -397,10 +372,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 5,
 		"category" : "Dried Fruit & Nuts",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 77,
 		"supplierIds" : "10",
 		"productCode" : "NWTCO-77",
 		"productName" : "Northwind Traders Mustard",
@@ -413,10 +387,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 15,
 		"category" : "Condiments",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 80,
 		"supplierIds" : "2",
 		"productCode" : "NWTDFN-80",
 		"productName" : "Northwind Traders Dried Plums",
@@ -429,10 +402,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Dried Fruit & Nuts",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 81,
 		"supplierIds" : "3",
 		"productCode" : "NWTB-81",
 		"productName" : "Northwind Traders Green Tea",
@@ -445,10 +417,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Beverages",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 82,
 		"supplierIds" : "1",
 		"productCode" : "NWTC-82",
 		"productName" : "Northwind Traders Granola",
@@ -461,10 +432,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Cereal",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 83,
 		"supplierIds" : "9",
 		"productCode" : "NWTCS-83",
 		"productName" : "Northwind Traders Potato Chips",
@@ -477,10 +447,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Chips, Snacks",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 85,
 		"supplierIds" : "1",
 		"productCode" : "NWTBGM-85",
 		"productName" : "Northwind Traders Brownie Mix",
@@ -493,10 +462,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 5,
 		"category" : "Baked Goods & Mixes",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 86,
 		"supplierIds" : "1",
 		"productCode" : "NWTBGM-86",
 		"productName" : "Northwind Traders Cake Mix",
@@ -509,10 +477,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 5,
 		"category" : "Baked Goods & Mixes",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 87,
 		"supplierIds" : "7",
 		"productCode" : "NWTB-87",
 		"productName" : "Northwind Traders Tea",
@@ -525,10 +492,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Beverages",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 88,
 		"supplierIds" : "6",
 		"productCode" : "NWTCFV-88",
 		"productName" : "Northwind Traders Pears",
@@ -541,10 +507,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 89,
 		"supplierIds" : "6",
 		"productCode" : "NWTCFV-89",
 		"productName" : "Northwind Traders Peaches",
@@ -557,10 +522,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 90,
 		"supplierIds" : "6",
 		"productCode" : "NWTCFV-90",
 		"productName" : "Northwind Traders Pineapple",
@@ -573,10 +537,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 91,
 		"supplierIds" : "6",
 		"productCode" : "NWTCFV-91",
 		"productName" : "Northwind Traders Cherry Pie Filling",
@@ -589,10 +552,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 92,
 		"supplierIds" : "6",
 		"productCode" : "NWTCFV-92",
 		"productName" : "Northwind Traders Green Beans",
@@ -605,10 +567,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 93,
 		"supplierIds" : "6",
 		"productCode" : "NWTCFV-93",
 		"productName" : "Northwind Traders Corn",
@@ -621,10 +582,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 94,
 		"supplierIds" : "6",
 		"productCode" : "NWTCFV-94",
 		"productName" : "Northwind Traders Peas",
@@ -637,10 +597,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 95,
 		"supplierIds" : "7",
 		"productCode" : "NWTCM-95",
 		"productName" : "Northwind Traders Tuna Fish",
@@ -653,10 +612,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Meat",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 96,
 		"supplierIds" : "7",
 		"productCode" : "NWTCM-96",
 		"productName" : "Northwind Traders Smoked Salmon",
@@ -669,10 +627,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Meat",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 97,
 		"supplierIds" : "1",
 		"productCode" : "NWTC-82",
 		"productName" : "Northwind Traders Hot Cereal",
@@ -685,10 +642,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Cereal",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 98,
 		"supplierIds" : "6",
 		"productCode" : "NWTSO-98",
 		"productName" : "Northwind Traders Vegetable Soup",
@@ -701,10 +657,9 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Soups",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 99,
 		"supplierIds" : "6",
 		"productCode" : "NWTSO-99",
 		"productName" : "Northwind Traders Chicken Soup",
@@ -717,6 +672,6 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Soups",
-		"attachments" : ?
+		"attachments" : ""
 	}
 ]

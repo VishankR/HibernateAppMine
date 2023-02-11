@@ -1,6 +1,5 @@
 [
 	{
-		"id" : 1,
 		"company" : "Company A",
 		"lastName" : "Bedecs",
 		"firstName" : "Anna",
@@ -17,10 +16,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 2,
 		"company" : "Company B",
 		"lastName" : "Gratacos Solsona",
 		"firstName" : "Antonio",
@@ -37,10 +35,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 3,
 		"company" : "Company C",
 		"lastName" : "Axen",
 		"firstName" : "Thomas",
@@ -57,10 +54,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 4,
 		"company" : "Company D",
 		"lastName" : "Lee",
 		"firstName" : "Christina",
@@ -77,10 +73,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 5,
 		"company" : "Company E",
 		"lastName" : "O’Donnell",
 		"firstName" : "Martin",
@@ -97,10 +92,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 6,
 		"company" : "Company F",
 		"lastName" : "Pérez-Olaeta",
 		"firstName" : "Francisco",
@@ -117,10 +111,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 7,
 		"company" : "Company G",
 		"lastName" : "Xie",
 		"firstName" : "Ming-Yang",
@@ -137,10 +130,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 8,
 		"company" : "Company H",
 		"lastName" : "Andersen",
 		"firstName" : "Elizabeth",
@@ -157,10 +149,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 9,
 		"company" : "Company I",
 		"lastName" : "Mortensen",
 		"firstName" : "Sven",
@@ -177,10 +168,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 10,
 		"company" : "Company J",
 		"lastName" : "Wacker",
 		"firstName" : "Roland",
@@ -197,10 +187,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 11,
 		"company" : "Company K",
 		"lastName" : "Krschne",
 		"firstName" : "Peter",
@@ -217,10 +206,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 12,
 		"company" : "Company L",
 		"lastName" : "Edwards",
 		"firstName" : "John",
@@ -237,10 +225,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 13,
 		"company" : "Company M",
 		"lastName" : "Ludick",
 		"firstName" : "Andre",
@@ -257,10 +244,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 14,
 		"company" : "Company N",
 		"lastName" : "Grilo",
 		"firstName" : "Carlos",
@@ -277,10 +263,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 15,
 		"company" : "Company O",
 		"lastName" : "Kupkova",
 		"firstName" : "Helena",
@@ -297,10 +282,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 16,
 		"company" : "Company P",
 		"lastName" : "Goldschmidt",
 		"firstName" : "Daniel",
@@ -317,10 +301,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 17,
 		"company" : "Company Q",
 		"lastName" : "Bagel",
 		"firstName" : "Jean Philippe",
@@ -337,10 +320,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 18,
 		"company" : "Company R",
 		"lastName" : "Autier Miconi",
 		"firstName" : "Catherine",
@@ -357,10 +339,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 19,
 		"company" : "Company S",
 		"lastName" : "Eggerer",
 		"firstName" : "Alexander",
@@ -377,10 +358,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 20,
 		"company" : "Company T",
 		"lastName" : "Li",
 		"firstName" : "George",
@@ -397,10 +377,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 21,
 		"company" : "Company U",
 		"lastName" : "Tham",
 		"firstName" : "Bernard",
@@ -417,10 +396,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 22,
 		"company" : "Company V",
 		"lastName" : "Ramos",
 		"firstName" : "Luciana",
@@ -437,10 +415,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 23,
 		"company" : "Company W",
 		"lastName" : "Entin",
 		"firstName" : "Michael",
@@ -457,10 +434,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 24,
 		"company" : "Company X",
 		"lastName" : "Hasselberg",
 		"firstName" : "Jonas",
@@ -477,10 +453,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 25,
 		"company" : "Company Y",
 		"lastName" : "Rodman",
 		"firstName" : "John",
@@ -497,10 +472,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 26,
 		"company" : "Company Z",
 		"lastName" : "Liu",
 		"firstName" : "Run",
@@ -517,10 +491,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 27,
 		"company" : "Company AA",
 		"lastName" : "Toh",
 		"firstName" : "Karen",
@@ -537,10 +510,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 28,
 		"company" : "Company BB",
 		"lastName" : "Raghav",
 		"firstName" : "Amritansh",
@@ -557,10 +529,9 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 29,
 		"company" : "Company CC",
 		"lastName" : "Lee",
 		"firstName" : "Soo Jung",
@@ -577,6 +548,6 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	}
 ]

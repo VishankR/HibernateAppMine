@@ -10,7 +10,7 @@
         <class>entity.concrete_class.InvoicesEntity</class>
         <class>entity.concrete_class.StringsEntity</class>
 
-        <class>entity.joined.Detail</class>
+        <class>entity.joined.DetailEntity</class>
         <class>entity.joined.SellorderdetailsEntity</class>
         <class>entity.joined.PurchaseorderdetailsEntity</class>
 

@@ -31,6 +31,7 @@ public abstract class OrdersEntity {
     private String paymentMethod;
     private Timestamp paymentDate;
     private String notes;
+    private String ordersEntity = "OrdersEntity";
     @OneToMany(mappedBy = "sellOrdersByCustomerOrderId")
     private Collection<InventorytransactionsEntity> inventorytransactionsById;
     @OneToMany(mappedBy = "sellOrdersByOrderId")
@@ -95,17 +96,25 @@ public abstract class OrdersEntity {
         this.notes = notes;
     }
 
+    public String getOrdersEntity() {
+        return ordersEntity;
+    }
+
+    public void setOrdersEntity(String ordersEntity) {
+        this.ordersEntity = ordersEntity;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof OrdersEntity)) return false;
         OrdersEntity that = (OrdersEntity) o;
-        return getId() == that.getId() && Objects.equals(getOrderDate(), that.getOrderDate()) && Objects.equals(getShippingFee(), that.getShippingFee()) && Objects.equals(getTaxes(), that.getTaxes()) && Objects.equals(getPaymentMethod(), that.getPaymentMethod()) && Objects.equals(getPaymentDate(), that.getPaymentDate()) && Objects.equals(getNotes(), that.getNotes()) && Objects.equals(getInventorytransactionsById(), that.getInventorytransactionsById()) && Objects.equals(getSellOrderdetailsById(), that.getSellOrderdetailsById()) && Objects.equals(getOrdersstatusByStatusId(), that.getOrdersstatusByStatusId());
+        return getId() == that.getId() && Objects.equals(getOrderDate(), that.getOrderDate()) && Objects.equals(getShippingFee(), that.getShippingFee()) && Objects.equals(getTaxes(), that.getTaxes()) && Objects.equals(getPaymentMethod(), that.getPaymentMethod()) && Objects.equals(getPaymentDate(), that.getPaymentDate()) && Objects.equals(getNotes(), that.getNotes()) && Objects.equals(getOrdersEntity(), that.getOrdersEntity()) && Objects.equals(getInventorytransactionsById(), that.getInventorytransactionsById()) && Objects.equals(getSellOrderdetailsById(), that.getSellOrderdetailsById()) && Objects.equals(getOrdersstatusByStatusId(), that.getOrdersstatusByStatusId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getOrderDate(), getShippingFee(), getTaxes(), getPaymentMethod(), getPaymentDate(), getNotes(), getInventorytransactionsById(), getSellOrderdetailsById(), getOrdersstatusByStatusId());
+        return Objects.hash(getId(), getOrderDate(), getShippingFee(), getTaxes(), getPaymentMethod(), getPaymentDate(), getNotes(), getOrdersEntity(), getInventorytransactionsById(), getSellOrderdetailsById(), getOrdersstatusByStatusId());
     }
 
     public Collection<InventorytransactionsEntity> getInventorytransactionsById() {
@@ -142,6 +151,7 @@ public abstract class OrdersEntity {
                 ", paymentMethod='" + paymentMethod + '\'' +
                 ", paymentDate=" + paymentDate +
                 ", notes='" + notes + '\'' +
+                ", ordersEntity='" + ordersEntity + '\'' +
                 ", inventorytransactionsById=" + inventorytransactionsById +
                 ", sellOrderdetailsById=" + sellOrderdetailsById +
                 ", ordersstatusByStatusId=" + ordersstatusByStatusId +

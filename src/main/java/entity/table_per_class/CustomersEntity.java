@@ -1,6 +1,5 @@
 package entity.table_per_class;
 
-import entity.single_table.OrdersEntity;
 import entity.single_table.SellOrdersEntity;
 
 import javax.persistence.Entity;
@@ -9,8 +8,17 @@ import java.util.Collection;
 
 @Entity
 public class CustomersEntity extends Person{
+    private String customersEntity = "CustomersEntity";
     @OneToMany(mappedBy = "customersByCustomerId")
     private Collection<SellOrdersEntity> sellOrdersById;
+
+    public String getCustomersEntity() {
+        return customersEntity;
+    }
+
+    public void setCustomersEntity(String customersEntity) {
+        this.customersEntity = customersEntity;
+    }
 
     public Collection<SellOrdersEntity> getSellOrdersById() {
         return sellOrdersById;
@@ -23,7 +31,8 @@ public class CustomersEntity extends Person{
     @Override
     public String toString() {
         return "CustomersEntity{" +
-                "sellOrdersById=" + sellOrdersById +
+                "customersEntity='" + customersEntity + '\'' +
+                ", sellOrdersById=" + sellOrdersById +
                 '}';
     }
 }

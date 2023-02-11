@@ -12,4 +12,10 @@ public class Queries {
 
     public static String QUERY_GET_ALL_PERSON = "SELECT p " +
             "FROM Person p";
+
+    public static String QUERY_GET_ALL_ORDERS = "SELECT o " +
+            "FROM OrdersEntity o";
+
+    public static String QUERY_GET_ALL_ORDERS_DETAIL = "SELECT od " +
+            "FROM DetailEntity od";
 }

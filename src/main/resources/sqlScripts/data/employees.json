@@ -1,6 +1,5 @@
 [
 	{
-		"id" : 30,
 		"company" : "Northwind Traders",
 		"lastName" : "Freehafer",
 		"firstName" : "Nancy",
@@ -17,10 +16,9 @@
 		"countryRegion" : "USA",
 		"webPage" : "#http://northwindtraders.com#",
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 31,
 		"company" : "Northwind Traders",
 		"lastName" : "Cencini",
 		"firstName" : "Andrew",
@@ -37,10 +35,9 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Joined the company as a sales representative, was promoted to sales manager and was then named vice president of sales.",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 32,
 		"company" : "Northwind Traders",
 		"lastName" : "Kotas",
 		"firstName" : "Jan",
@@ -57,10 +54,9 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Was hired as a sales associate and was promoted to sales representative.",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 33,
 		"company" : "Northwind Traders",
 		"lastName" : "Sergienko",
 		"firstName" : "Mariya",
@@ -77,10 +73,9 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 34,
 		"company" : "Northwind Traders",
 		"lastName" : "Thorpe",
 		"firstName" : "Steven",
@@ -97,10 +92,9 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Joined the company as a sales representative and was promoted to sales manager.  Fluent in French.",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 35,
 		"company" : "Northwind Traders",
 		"lastName" : "Neipper",
 		"firstName" : "Michael",
@@ -117,10 +111,9 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Fluent in Japanese and can read and write French, Portuguese, and Spanish.",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 36,
 		"company" : "Northwind Traders",
 		"lastName" : "Zare",
 		"firstName" : "Robert",
@@ -137,10 +130,9 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 37,
 		"company" : "Northwind Traders",
 		"lastName" : "Giussani",
 		"firstName" : "Laura",
@@ -157,10 +149,9 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Reads and writes French.",
-		"attachments" : ?
+		"attachments" : ""
 	},
 	{
-		"id" : 38,
 		"company" : "Northwind Traders",
 		"lastName" : "Hellung-Larsen",
 		"firstName" : "Anne",
@@ -177,6 +168,6 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Fluent in French and German.",
-		"attachments" : ?
+		"attachments" : ""
 	}
 ]

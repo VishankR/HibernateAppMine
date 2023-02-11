@@ -9,9 +9,17 @@ import java.util.Collection;
 
 @Entity
 public class OrdersstatusEntity extends Status {
-
+    private String ordersStatusEntity = "OrdersStatusEntity";
     @OneToMany(mappedBy = "ordersstatusByStatusId")
     private Collection<SellOrdersEntity> sellOrdersById;
+
+    public String getOrdersStatusEntity() {
+        return ordersStatusEntity;
+    }
+
+    public void setOrdersStatusEntity(String ordersStatusEntity) {
+        this.ordersStatusEntity = ordersStatusEntity;
+    }
 
     public Collection<SellOrdersEntity> getSellOrdersById() {
         return sellOrdersById;
@@ -24,7 +32,8 @@ public class OrdersstatusEntity extends Status {
     @Override
     public String toString() {
         return "OrdersstatusEntity{" +
-                "sellOrdersById=" + sellOrdersById +
+                "ordersStatusEntity='" + ordersStatusEntity + '\'' +
+                ", sellOrdersById=" + sellOrdersById +
                 '}';
     }
 }

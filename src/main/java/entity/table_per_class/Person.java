@@ -52,6 +52,8 @@ public class Person {
 
     private byte[] attachments;
 
+    private String personsEntity = "PersonsEntity";
+
     public int getId() {
         return id;
     }
@@ -196,6 +198,14 @@ public class Person {
         this.attachments = attachments;
     }
 
+    public String getPersonsEntity() {
+        return personsEntity;
+    }
+
+    public void setPersonsEntity(String personsEntity) {
+        this.personsEntity = personsEntity;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -217,6 +227,7 @@ public class Person {
                 ", webPage='" + webPage + '\'' +
                 ", notes='" + notes + '\'' +
                 ", attachments=" + Arrays.toString(attachments) +
+                ", personsEntity='" + personsEntity + '\'' +
                 '}';
     }
 }

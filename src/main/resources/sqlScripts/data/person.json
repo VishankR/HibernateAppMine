@@ -1,6 +1,5 @@
 [
 	{
-		"id" : 1,
 		"company" : "Company A",
 		"lastName" : "Bedecs",
 		"firstName" : "Anna",
@@ -20,7 +19,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 2,
 		"company" : "Company B",
 		"lastName" : "Gratacos Solsona",
 		"firstName" : "Antonio",
@@ -40,7 +38,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 3,
 		"company" : "Company C",
 		"lastName" : "Axen",
 		"firstName" : "Thomas",
@@ -60,7 +57,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 4,
 		"company" : "Company D",
 		"lastName" : "Lee",
 		"firstName" : "Christina",
@@ -80,7 +76,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 5,
 		"company" : "Company E",
 		"lastName" : "O’Donnell",
 		"firstName" : "Martin",
@@ -100,7 +95,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 6,
 		"company" : "Company F",
 		"lastName" : "Pérez-Olaeta",
 		"firstName" : "Francisco",
@@ -120,7 +114,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 7,
 		"company" : "Company G",
 		"lastName" : "Xie",
 		"firstName" : "Ming-Yang",
@@ -140,7 +133,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 8,
 		"company" : "Company H",
 		"lastName" : "Andersen",
 		"firstName" : "Elizabeth",
@@ -160,7 +152,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 9,
 		"company" : "Company I",
 		"lastName" : "Mortensen",
 		"firstName" : "Sven",
@@ -180,7 +171,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 10,
 		"company" : "Company J",
 		"lastName" : "Wacker",
 		"firstName" : "Roland",
@@ -200,7 +190,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 11,
 		"company" : "Company K",
 		"lastName" : "Krschne",
 		"firstName" : "Peter",
@@ -220,7 +209,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 12,
 		"company" : "Company L",
 		"lastName" : "Edwards",
 		"firstName" : "John",
@@ -240,7 +228,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 13,
 		"company" : "Company M",
 		"lastName" : "Ludick",
 		"firstName" : "Andre",
@@ -260,7 +247,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 14,
 		"company" : "Company N",
 		"lastName" : "Grilo",
 		"firstName" : "Carlos",
@@ -280,7 +266,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 15,
 		"company" : "Company O",
 		"lastName" : "Kupkova",
 		"firstName" : "Helena",
@@ -300,7 +285,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 16,
 		"company" : "Company P",
 		"lastName" : "Goldschmidt",
 		"firstName" : "Daniel",
@@ -320,7 +304,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 17,
 		"company" : "Company Q",
 		"lastName" : "Bagel",
 		"firstName" : "Jean Philippe",
@@ -340,7 +323,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 18,
 		"company" : "Company R",
 		"lastName" : "Autier Miconi",
 		"firstName" : "Catherine",
@@ -360,7 +342,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 19,
 		"company" : "Company S",
 		"lastName" : "Eggerer",
 		"firstName" : "Alexander",
@@ -380,7 +361,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 20,
 		"company" : "Company T",
 		"lastName" : "Li",
 		"firstName" : "George",
@@ -400,7 +380,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 21,
 		"company" : "Company U",
 		"lastName" : "Tham",
 		"firstName" : "Bernard",
@@ -420,7 +399,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 22,
 		"company" : "Company V",
 		"lastName" : "Ramos",
 		"firstName" : "Luciana",
@@ -440,7 +418,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 23,
 		"company" : "Company W",
 		"lastName" : "Entin",
 		"firstName" : "Michael",
@@ -460,7 +437,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 24,
 		"company" : "Company X",
 		"lastName" : "Hasselberg",
 		"firstName" : "Jonas",
@@ -480,7 +456,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 25,
 		"company" : "Company Y",
 		"lastName" : "Rodman",
 		"firstName" : "John",
@@ -500,7 +475,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 26,
 		"company" : "Company Z",
 		"lastName" : "Liu",
 		"firstName" : "Run",
@@ -520,7 +494,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 27,
 		"company" : "Company AA",
 		"lastName" : "Toh",
 		"firstName" : "Karen",
@@ -540,7 +513,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 28,
 		"company" : "Company BB",
 		"lastName" : "Raghav",
 		"firstName" : "Amritansh",
@@ -560,7 +532,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 29,
 		"company" : "Company CC",
 		"lastName" : "Lee",
 		"firstName" : "Soo Jung",
@@ -580,7 +551,6 @@
 		"attachments" : ""
 	},
     {
-		"id" : 30,
 		"company" : "Northwind Traders",
 		"lastName" : "Freehafer",
 		"firstName" : "Nancy",
@@ -600,7 +570,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 31,
 		"company" : "Northwind Traders",
 		"lastName" : "Cencini",
 		"firstName" : "Andrew",
@@ -620,7 +589,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 32,
 		"company" : "Northwind Traders",
 		"lastName" : "Kotas",
 		"firstName" : "Jan",
@@ -640,7 +608,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 33,
 		"company" : "Northwind Traders",
 		"lastName" : "Sergienko",
 		"firstName" : "Mariya",
@@ -660,7 +627,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 34,
 		"company" : "Northwind Traders",
 		"lastName" : "Thorpe",
 		"firstName" : "Steven",
@@ -680,7 +646,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 35,
 		"company" : "Northwind Traders",
 		"lastName" : "Neipper",
 		"firstName" : "Michael",
@@ -700,7 +665,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 36,
 		"company" : "Northwind Traders",
 		"lastName" : "Zare",
 		"firstName" : "Robert",
@@ -720,7 +684,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 37,
 		"company" : "Northwind Traders",
 		"lastName" : "Giussani",
 		"firstName" : "Laura",
@@ -740,7 +703,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 38,
 		"company" : "Northwind Traders",
 		"lastName" : "Hellung-Larsen",
 		"firstName" : "Anne",
@@ -760,7 +722,6 @@
 		"attachments" : ""
 	},
     {
-		"id" : 39,
 		"company" : "Shipping Company A",
 		"lastName" : null,
 		"firstName" : null,
@@ -780,7 +741,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 40,
 		"company" : "Shipping Company B",
 		"lastName" : null,
 		"firstName" : null,
@@ -800,7 +760,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 41,
 		"company" : "Shipping Company C",
 		"lastName" : null,
 		"firstName" : null,
@@ -820,7 +779,6 @@
 		"attachments" : ""
 	},
     {
-		"id" : 42,
 		"company" : "Supplier A",
 		"lastName" : "Andersen",
 		"firstName" : "Elizabeth A.",
@@ -840,7 +798,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 43,
 		"company" : "Supplier B",
 		"lastName" : "Weiler",
 		"firstName" : "Cornelia",
@@ -860,7 +817,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 44,
 		"company" : "Supplier C",
 		"lastName" : "Kelley",
 		"firstName" : "Madeleine",
@@ -880,7 +836,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 45,
 		"company" : "Supplier D",
 		"lastName" : "Sato",
 		"firstName" : "Naoki",
@@ -900,7 +855,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 46,
 		"company" : "Supplier E",
 		"lastName" : "Hernandez-Echevarria",
 		"firstName" : "Amaya",
@@ -920,7 +874,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 47,
 		"company" : "Supplier F",
 		"lastName" : "Hayakawa",
 		"firstName" : "Satomi",
@@ -940,7 +893,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 48,
 		"company" : "Supplier G",
 		"lastName" : "Glasson",
 		"firstName" : "Stuart",
@@ -960,7 +912,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 49,
 		"company" : "Supplier H",
 		"lastName" : "Dunton",
 		"firstName" : "Bryn Paul",
@@ -980,7 +931,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 50,
 		"company" : "Supplier I",
 		"lastName" : "Sandberg",
 		"firstName" : "Mikael",
@@ -1000,7 +950,6 @@
 		"attachments" : ""
 	},
 	{
-		"id" : 51,
 		"company" : "Supplier J",
 		"lastName" : "Sousa",
 		"firstName" : "Luis",

@@ -23,6 +23,8 @@ public abstract class Status {
 
     private String status;
 
+    private String statusEntity = "StatusEntity";
+
     public int getId() {
         return id;
     }
@@ -39,17 +41,25 @@ public abstract class Status {
         this.status = status;
     }
 
+    public String getStatusEntity() {
+        return statusEntity;
+    }
+
+    public void setStatusEntity(String statusEntity) {
+        this.statusEntity = statusEntity;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Status)) return false;
         Status status1 = (Status) o;
-        return getId() == status1.getId() && Objects.equals(getStatus(), status1.getStatus());
+        return getId() == status1.getId() && Objects.equals(getStatus(), status1.getStatus()) && Objects.equals(getStatusEntity(), status1.getStatusEntity());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getStatus());
+        return Objects.hash(getId(), getStatus(), getStatusEntity());
     }
 
     @Override
@@ -57,6 +67,7 @@ public abstract class Status {
         return "Status{" +
                 "id=" + id +
                 ", status='" + status + '\'' +
+                ", statusEntity='" + statusEntity + '\'' +
                 '}';
     }
 }
