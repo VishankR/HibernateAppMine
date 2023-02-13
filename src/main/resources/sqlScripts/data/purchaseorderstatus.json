@@ -1,18 +1,14 @@
 [
 	{
-		"id" : 12,
 		"status" : "New"
 	},
 	{
-		"id" : 13,
 		"status" : "Submitted"
 	},
 	{
-		"id" : 14,
 		"status" : "Approved"
 	},
 	{
-		"id" : 15,
 		"status" : "Closed"
 	}
 ]

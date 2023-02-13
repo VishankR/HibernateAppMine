@@ -18,7 +18,7 @@
         <class>entity.mapped_superclass.OrdersstatusEntity</class>
         <class>entity.mapped_superclass.OrderstaxstatusEntity</class>
         <class>entity.mapped_superclass.PurchaseorderstatusEntity</class>
-        <class>entity.mapped_superclass.Status</class>
+        <class>entity.mapped_superclass.StatusEntity</class>
 
         <class>entity.single_table.OrdersEntity</class>
         <class>entity.single_table.SellOrdersEntity</class>
@@ -28,7 +28,7 @@
         <class>entity.table_per_class.EmployeesEntity</class>
         <class>entity.table_per_class.ShippersEntity</class>
         <class>entity.table_per_class.SuppliersEntity</class>
-        <class>entity.table_per_class.Person</class>
+        <class>entity.table_per_class.PersonEntity</class>
 
         <class>entity.concrete_class.ProductsEntity</class>
 
@@ -39,7 +39,7 @@
             <property name="hibernate.connection.password" value="vishank"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
-            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
     </persistence-unit>
 </persistence>

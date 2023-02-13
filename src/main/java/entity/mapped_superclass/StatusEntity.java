@@ -8,14 +8,14 @@ import java.util.Objects;
 
 /**
  * MappedSuperclass allows you to share the attribute definition between multiple entities. It maps each concrete class to its own table.
- * But it also has a huge drawback. A mapped superclass is not an entity(For e.g. Here Status class), and there is no table for it.
+ * But it also has a huge drawback. A mapped superclass is not an entity(For e.g. Here StatusEntity class), and there is no table for it.
  * It means that you can’t use polymorphic queries and you also can’t define a relationship directly on
- * Mapped Superclass(For e.g. Here Status class {But if we used TABLE_PER_CLASS then we could have used polymorphic queries and
- * relationship as well for eg we could get all type of status from all class implementing Status class just by writting select * from Status;}).
+ * Mapped Superclass(For e.g. Here StatusEntity class {But if we used TABLE_PER_CLASS then we could have used polymorphic queries and
+ * relationship as well for eg we could get all type of status from all class implementing StatusEntity class just by writting select * from StatusEntity;}).
  */
 
 @MappedSuperclass
-public abstract class Status {
+public abstract class StatusEntity {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -52,9 +52,9 @@ public abstract class Status {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Status)) return false;
-        Status status1 = (Status) o;
-        return getId() == status1.getId() && Objects.equals(getStatus(), status1.getStatus()) && Objects.equals(getStatusEntity(), status1.getStatusEntity());
+        if (!(o instanceof StatusEntity)) return false;
+        StatusEntity statusEntity1 = (StatusEntity) o;
+        return getId() == statusEntity1.getId() && Objects.equals(getStatus(), statusEntity1.getStatus()) && Objects.equals(getStatusEntity(), statusEntity1.getStatusEntity());
     }
 
     @Override
@@ -64,7 +64,7 @@ public abstract class Status {
 
     @Override
     public String toString() {
-        return "Status{" +
+        return "StatusEntity{" +
                 "id=" + id +
                 ", status='" + status + '\'' +
                 ", statusEntity='" + statusEntity + '\'' +

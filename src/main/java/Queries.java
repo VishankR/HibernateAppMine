@@ -11,7 +11,7 @@ public class Queries {
             "WHERE o.shipCity= :shipCity";
 
     public static String QUERY_GET_ALL_PERSON = "SELECT p " +
-            "FROM Person p";
+            "FROM PersonEntity p";
 
     public static String QUERY_GET_ALL_ORDERS = "SELECT o " +
             "FROM OrdersEntity o";

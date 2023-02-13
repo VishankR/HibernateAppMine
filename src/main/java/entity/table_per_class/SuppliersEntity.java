@@ -7,7 +7,7 @@ import javax.persistence.OneToMany;
 import java.util.Collection;
 
 @Entity
-public class SuppliersEntity extends Person {
+public class SuppliersEntity extends PersonEntity {
     private String suppliersEntity = "SuppliersEntity";
     @OneToMany(mappedBy = "suppliersBySupplierId")
     private Collection<PurchaseordersEntity> purchaseordersById;

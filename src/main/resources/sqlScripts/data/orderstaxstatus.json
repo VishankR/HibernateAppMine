@@ -1,10 +1,8 @@
 [
 	{
-		"id" : 10,
 		"status" : "Tax Exempt"
 	},
 	{
-		"id" : 11,
 		"status" : "Taxable"
 	}
 ]

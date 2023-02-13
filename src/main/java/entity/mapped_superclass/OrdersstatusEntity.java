@@ -1,6 +1,5 @@
 package entity.mapped_superclass;
 
-import entity.single_table.OrdersEntity;
 import entity.single_table.SellOrdersEntity;
 
 import javax.persistence.Entity;
@@ -8,7 +7,7 @@ import javax.persistence.OneToMany;
 import java.util.Collection;
 
 @Entity
-public class OrdersstatusEntity extends Status {
+public class OrdersstatusEntity extends StatusEntity {
     private String ordersStatusEntity = "OrdersStatusEntity";
     @OneToMany(mappedBy = "ordersstatusByStatusId")
     private Collection<SellOrdersEntity> sellOrdersById;

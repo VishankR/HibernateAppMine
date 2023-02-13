@@ -12,7 +12,7 @@ import java.util.Arrays;
 
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-public class Person {
+public class PersonEntity {
 
     @GeneratedValue(strategy = GenerationType.TABLE)
     @Id
@@ -208,7 +208,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "PersonEntity{" +
                 "id=" + id +
                 ", company='" + company + '\'' +
                 ", lastName='" + lastName + '\'' +

@@ -1,6 +1,5 @@
 package entity.table_per_class;
 
-import entity.single_table.OrdersEntity;
 import entity.single_table.SellOrdersEntity;
 
 import javax.persistence.Entity;
@@ -8,7 +7,7 @@ import javax.persistence.OneToMany;
 import java.util.Collection;
 
 @Entity
-public class ShippersEntity extends Person {
+public class ShippersEntity extends PersonEntity {
     private String shippersEntity = "ShippersEntity";
     @OneToMany(mappedBy = "shippersByShipperId")
     private Collection<SellOrdersEntity> sellOrdersById;

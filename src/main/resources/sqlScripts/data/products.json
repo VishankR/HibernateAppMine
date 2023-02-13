@@ -12,7 +12,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Beverages",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "10",
@@ -27,7 +27,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Condiments",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "10",
@@ -42,7 +42,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Condiments",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "10",
@@ -57,7 +57,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Oil",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "26",
@@ -72,7 +72,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Jams, Preserves",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "2",
@@ -87,7 +87,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Dried Fruit & Nuts",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "8",
@@ -102,7 +102,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Sauces",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "26",
@@ -117,7 +117,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Dried Fruit & Nuts",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "6",
@@ -132,7 +132,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "1",
@@ -147,7 +147,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 5,
 		"category" : "Baked Goods & Mixes",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "26",
@@ -162,7 +162,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Jams, Preserves",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "1",
@@ -177,7 +177,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 5,
 		"category" : "Baked Goods & Mixes",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "4",
@@ -192,7 +192,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 15,
 		"category" : "Beverages",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "7",
@@ -207,7 +207,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 30,
 		"category" : "Canned Meat",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "6",
@@ -222,7 +222,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Soups",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "34",
@@ -237,7 +237,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Beverages",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "10",
@@ -252,7 +252,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Candy",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "2",
@@ -267,7 +267,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Dried Fruit & Nuts",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "1",
@@ -282,7 +282,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Grains",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "1",
@@ -297,7 +297,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 30,
 		"category" : "Pasta",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "1",
@@ -312,7 +312,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 20,
 		"category" : "Pasta",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "8",
@@ -327,7 +327,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Sauces",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "8",
@@ -342,7 +342,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 20,
 		"category" : "Sauces",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "5",
@@ -357,7 +357,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 10,
 		"category" : "Dairy products",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "26",
@@ -372,7 +372,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 5,
 		"category" : "Dried Fruit & Nuts",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "10",
@@ -387,7 +387,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 15,
 		"category" : "Condiments",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "2",
@@ -402,7 +402,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Dried Fruit & Nuts",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "3",
@@ -417,7 +417,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 25,
 		"category" : "Beverages",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "1",
@@ -432,7 +432,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Cereal",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "9",
@@ -447,7 +447,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Chips, Snacks",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "1",
@@ -462,7 +462,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 5,
 		"category" : "Baked Goods & Mixes",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "1",
@@ -477,7 +477,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : 5,
 		"category" : "Baked Goods & Mixes",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "7",
@@ -492,7 +492,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Beverages",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "6",
@@ -507,7 +507,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "6",
@@ -522,7 +522,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "6",
@@ -537,7 +537,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "6",
@@ -552,7 +552,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "6",
@@ -567,7 +567,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "6",
@@ -582,7 +582,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "6",
@@ -597,7 +597,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Fruit & Vegetables",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "7",
@@ -612,7 +612,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Meat",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "7",
@@ -627,7 +627,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Canned Meat",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "1",
@@ -642,7 +642,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Cereal",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "6",
@@ -657,7 +657,7 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Soups",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"supplierIds" : "6",
@@ -672,6 +672,6 @@
 		"discontinued" : 0,
 		"minimumReorderQuantity" : null,
 		"category" : "Soups",
-		"attachments" : ""
+		"attachments" : null
 	}
 ]

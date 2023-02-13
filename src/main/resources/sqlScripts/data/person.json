@@ -16,7 +16,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company B",
@@ -35,7 +35,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company C",
@@ -54,7 +54,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company D",
@@ -73,7 +73,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company E",
@@ -92,7 +92,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company F",
@@ -111,7 +111,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company G",
@@ -130,7 +130,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company H",
@@ -149,7 +149,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company I",
@@ -168,7 +168,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company J",
@@ -187,7 +187,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company K",
@@ -206,7 +206,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company L",
@@ -225,7 +225,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company M",
@@ -244,7 +244,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company N",
@@ -263,7 +263,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company O",
@@ -282,7 +282,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company P",
@@ -301,7 +301,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company Q",
@@ -320,7 +320,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company R",
@@ -339,7 +339,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company S",
@@ -358,7 +358,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company T",
@@ -377,7 +377,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company U",
@@ -396,7 +396,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company V",
@@ -415,7 +415,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company W",
@@ -434,7 +434,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company X",
@@ -453,7 +453,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company Y",
@@ -472,7 +472,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company Z",
@@ -491,7 +491,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company AA",
@@ -510,7 +510,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company BB",
@@ -529,7 +529,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Company CC",
@@ -548,7 +548,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
     {
 		"company" : "Northwind Traders",
@@ -567,7 +567,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "#http://northwindtraders.com#",
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -586,7 +586,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Joined the company as a sales representative, was promoted to sales manager and was then named vice president of sales.",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -605,7 +605,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Was hired as a sales associate and was promoted to sales representative.",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -624,7 +624,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -643,7 +643,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Joined the company as a sales representative and was promoted to sales manager.  Fluent in French.",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -662,7 +662,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Fluent in Japanese and can read and write French, Portuguese, and Spanish.",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -681,7 +681,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -700,7 +700,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Reads and writes French.",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -719,7 +719,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Fluent in French and German.",
-		"attachments" : ""
+		"attachments" : null
 	},
     {
 		"company" : "Shipping Company A",
@@ -738,7 +738,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Shipping Company B",
@@ -757,7 +757,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Shipping Company C",
@@ -776,7 +776,7 @@
 		"countryRegion" : "USA",
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
     {
 		"company" : "Supplier A",
@@ -795,7 +795,7 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Supplier B",
@@ -814,7 +814,7 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Supplier C",
@@ -833,7 +833,7 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Supplier D",
@@ -852,7 +852,7 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Supplier E",
@@ -871,7 +871,7 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Supplier F",
@@ -890,7 +890,7 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Supplier G",
@@ -909,7 +909,7 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Supplier H",
@@ -928,7 +928,7 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Supplier I",
@@ -947,7 +947,7 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Supplier J",
@@ -966,7 +966,7 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	}
 ]
 

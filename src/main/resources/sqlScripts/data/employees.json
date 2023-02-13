@@ -16,7 +16,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "#http://northwindtraders.com#",
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -35,7 +35,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Joined the company as a sales representative, was promoted to sales manager and was then named vice president of sales.",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -54,7 +54,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Was hired as a sales associate and was promoted to sales representative.",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -73,7 +73,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -92,7 +92,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Joined the company as a sales representative and was promoted to sales manager.  Fluent in French.",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -111,7 +111,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Fluent in Japanese and can read and write French, Portuguese, and Spanish.",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -130,7 +130,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : null,
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -149,7 +149,7 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Reads and writes French.",
-		"attachments" : ""
+		"attachments" : null
 	},
 	{
 		"company" : "Northwind Traders",
@@ -168,6 +168,6 @@
 		"countryRegion" : "USA",
 		"webPage" : "http://northwindtraders.com#http://northwindtraders.com/#",
 		"notes" : "Fluent in French and German.",
-		"attachments" : ""
+		"attachments" : null
 	}
 ]

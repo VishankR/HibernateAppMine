@@ -1,5 +1,4 @@
-select
-    ordersenti0_.id as id2_7_,
+select ordersenti0_.id as id2_7_,
     ordersenti0_.notes as notes3_7_,
     ordersenti0_.orderDate as orderdat4_7_,
     ordersenti0_.statusId as statusi24_7_,
@@ -29,5 +28,4 @@ select
     ordersenti0_.submittedDate as submitt23_7_,
     ordersenti0_.supplierId as supplie30_7_,
     ordersenti0_.OrderType as ordertyp1_7_
-from
-    OrdersEntity ordersenti0_
+from OrdersEntity ordersenti0_

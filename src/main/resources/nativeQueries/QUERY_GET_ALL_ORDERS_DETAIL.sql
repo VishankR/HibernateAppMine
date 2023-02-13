@@ -1,5 +1,4 @@
-select
-    detailenti0_.id as id1_1_,
+select detailenti0_.id as id1_1_,
     detailenti0_.inventoryId as inventor2_1_,
     detailenti0_.orderId as orderid3_1_,
     detailenti0_.quantity as quantity4_1_,
@@ -19,12 +18,7 @@ select
         when detailenti0_1_.id is not null then 1
         when detailenti0_2_.id is not null then 2
         when detailenti0_.id is not null then 0
-        end as clazz_
-from
-    DetailEntity detailenti0_
-        left outer join
-    PurchaseorderdetailsEntity detailenti0_1_
-    on detailenti0_.id=detailenti0_1_.id
-        left outer join
-    SellorderdetailsEntity detailenti0_2_
-    on detailenti0_.id=detailenti0_2_.id
+    end as clazz_
+from DetailEntity detailenti0_
+    left outer join PurchaseorderdetailsEntity detailenti0_1_ on detailenti0_.id = detailenti0_1_.id
+    left outer join SellorderdetailsEntity detailenti0_2_ on detailenti0_.id = detailenti0_2_.id

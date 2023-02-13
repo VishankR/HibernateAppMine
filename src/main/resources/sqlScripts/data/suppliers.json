@@ -1,6 +1,5 @@
 [
 	{
-		"id" : 42,
 		"company" : "Supplier A",
 		"lastName" : "Andersen",
 		"firstName" : "Elizabeth A.",
@@ -17,10 +16,9 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : null
 	},
 	{
-		"id" : 43,
 		"company" : "Supplier B",
 		"lastName" : "Weiler",
 		"firstName" : "Cornelia",
@@ -37,10 +35,9 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : null
 	},
 	{
-		"id" : 44,
 		"company" : "Supplier C",
 		"lastName" : "Kelley",
 		"firstName" : "Madeleine",
@@ -57,10 +54,9 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : null
 	},
 	{
-		"id" : 45,
 		"company" : "Supplier D",
 		"lastName" : "Sato",
 		"firstName" : "Naoki",
@@ -77,10 +73,9 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : null
 	},
 	{
-		"id" : 46,
 		"company" : "Supplier E",
 		"lastName" : "Hernandez-Echevarria",
 		"firstName" : "Amaya",
@@ -97,10 +92,9 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : null
 	},
 	{
-		"id" : 47,
 		"company" : "Supplier F",
 		"lastName" : "Hayakawa",
 		"firstName" : "Satomi",
@@ -117,10 +111,9 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : null
 	},
 	{
-		"id" : 48,
 		"company" : "Supplier G",
 		"lastName" : "Glasson",
 		"firstName" : "Stuart",
@@ -137,10 +130,9 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : null
 	},
 	{
-		"id" : 49,
 		"company" : "Supplier H",
 		"lastName" : "Dunton",
 		"firstName" : "Bryn Paul",
@@ -157,10 +149,9 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : null
 	},
 	{
-		"id" : 50,
 		"company" : "Supplier I",
 		"lastName" : "Sandberg",
 		"firstName" : "Mikael",
@@ -177,10 +168,9 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : null
 	},
 	{
-		"id" : 51,
 		"company" : "Supplier J",
 		"lastName" : "Sousa",
 		"firstName" : "Luis",
@@ -197,6 +187,6 @@
 		"countryRegion" : null,
 		"webPage" : null,
 		"notes" : null,
-		"attachments" : ?
+		"attachments" : null
 	}
 ]
