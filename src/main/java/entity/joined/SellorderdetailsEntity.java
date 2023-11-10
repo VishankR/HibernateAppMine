@@ -13,7 +13,6 @@ import java.util.Objects;
 
 @Entity
 public class SellorderdetailsEntity extends DetailEntity {
-    private String sellOrderDetailsEntity = "SellOrderDetailsEntity";
     private double discount;
     private Timestamp dateAllocated;
     private Integer purchaseOrderId;
@@ -26,6 +25,10 @@ public class SellorderdetailsEntity extends DetailEntity {
     @ManyToOne
     @JoinColumn(name = "statusId", referencedColumnName = "id")
     private OrderdetailsstatusEntity orderdetailsstatusByStatusId;
+
+    public SellorderdetailsEntity() {
+        this.setDType(this.getClass().getName());
+    }
 
     public double getDiscount() {
         return discount;
@@ -51,26 +54,18 @@ public class SellorderdetailsEntity extends DetailEntity {
         this.purchaseOrderId = purchaseOrderId;
     }
 
-    public String getSellOrderDetailsEntity() {
-        return sellOrderDetailsEntity;
-    }
-
-    public void setSellOrderDetailsEntity(String sellOrderDetailsEntity) {
-        this.sellOrderDetailsEntity = sellOrderDetailsEntity;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof SellorderdetailsEntity)) return false;
         if (!super.equals(o)) return false;
         SellorderdetailsEntity that = (SellorderdetailsEntity) o;
-        return Double.compare(that.getDiscount(), getDiscount()) == 0 && Objects.equals(getSellOrderDetailsEntity(), that.getSellOrderDetailsEntity()) && Objects.equals(getDateAllocated(), that.getDateAllocated()) && Objects.equals(getPurchaseOrderId(), that.getPurchaseOrderId()) && Objects.equals(getSellOrdersByOrderId(), that.getSellOrdersByOrderId()) && Objects.equals(getProductsByProductId(), that.getProductsByProductId()) && Objects.equals(getOrderdetailsstatusByStatusId(), that.getOrderdetailsstatusByStatusId());
+        return Double.compare(that.getDiscount(), getDiscount()) == 0 && Objects.equals(getDType(), that.getDType()) && Objects.equals(getDateAllocated(), that.getDateAllocated()) && Objects.equals(getPurchaseOrderId(), that.getPurchaseOrderId()) && Objects.equals(getSellOrdersByOrderId(), that.getSellOrdersByOrderId()) && Objects.equals(getProductsByProductId(), that.getProductsByProductId()) && Objects.equals(getOrderdetailsstatusByStatusId(), that.getOrderdetailsstatusByStatusId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), getSellOrderDetailsEntity(), getDiscount(), getDateAllocated(), getPurchaseOrderId(), getSellOrdersByOrderId(), getProductsByProductId(), getOrderdetailsstatusByStatusId());
+        return Objects.hash(super.hashCode(), getDType(), getDiscount(), getDateAllocated(), getPurchaseOrderId(), getSellOrdersByOrderId(), getProductsByProductId(), getOrderdetailsstatusByStatusId());
     }
 
     public OrdersEntity getSellOrdersByOrderId() {
@@ -100,7 +95,6 @@ public class SellorderdetailsEntity extends DetailEntity {
     @Override
     public String toString() {
         return "SellorderdetailsEntity{" +
-                "sellOrderDetailsEntity='" + sellOrderDetailsEntity + '\'' +
                 ", discount=" + discount +
                 ", dateAllocated=" + dateAllocated +
                 ", purchaseOrderId=" + purchaseOrderId +

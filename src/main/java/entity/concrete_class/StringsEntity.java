@@ -8,10 +8,11 @@ import java.util.Objects;
 
 @Entity
 public class StringsEntity {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     @Id
     private int stringId;
     private String stringData;
+    private String DType;
 
     public int getStringId() {
         return stringId;
@@ -27,6 +28,18 @@ public class StringsEntity {
 
     public void setStringData(String stringData) {
         this.stringData = stringData;
+    }
+
+    public String getDType() {
+        return DType;
+    }
+
+    public void setDType() {
+        this.DType = this.getClass().getName();
+    }
+
+    public void setDType(String DType) {
+        this.DType = DType;
     }
 
     @Override

@@ -9,18 +9,13 @@ import java.util.Collection;
 
 @Entity
 public class EmployeesEntity extends PersonEntity {
-    private String employeesEntity = "EmployeesEntity";
     @OneToMany(mappedBy = "employeesByEmployeeId")
     private Collection<SellOrdersEntity> sellOrdersById;
     @OneToMany(mappedBy = "employeesByCreatedBy")
     private Collection<PurchaseordersEntity> purchaseordersById;
 
-    public String getEmployeesEntity() {
-        return employeesEntity;
-    }
-
-    public void setEmployeesEntity(String employeesEntity) {
-        this.employeesEntity = employeesEntity;
+    public EmployeesEntity() {
+        this.setDType(this.getClass().getName());
     }
 
     public Collection<SellOrdersEntity> getSellOrdersById() {
@@ -42,7 +37,6 @@ public class EmployeesEntity extends PersonEntity {
     @Override
     public String toString() {
         return "EmployeesEntity{" +
-                "employeesEntity='" + employeesEntity + '\'' +
                 ", sellOrdersById=" + sellOrdersById +
                 ", purchaseordersById=" + purchaseordersById +
                 '}';

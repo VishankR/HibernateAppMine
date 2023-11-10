@@ -12,11 +12,11 @@ import java.util.Arrays;
 
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-public class PersonEntity {
+public abstract class PersonEntity {
 
     @GeneratedValue(strategy = GenerationType.TABLE)
     @Id
-    private int id;
+    private Integer id;
 
     private String company;
 
@@ -52,13 +52,13 @@ public class PersonEntity {
 
     private byte[] attachments;
 
-    private String personsEntity = "PersonsEntity";
+    private String DType;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -198,12 +198,16 @@ public class PersonEntity {
         this.attachments = attachments;
     }
 
-    public String getPersonsEntity() {
-        return personsEntity;
+    public String getDType() {
+        return DType;
     }
 
-    public void setPersonsEntity(String personsEntity) {
-        this.personsEntity = personsEntity;
+    public void setDType() {
+        this.DType = this.getClass().getName();
+    }
+
+    public void setDType(String DType) {
+        this.DType = DType;
     }
 
     @Override
@@ -227,7 +231,7 @@ public class PersonEntity {
                 ", webPage='" + webPage + '\'' +
                 ", notes='" + notes + '\'' +
                 ", attachments=" + Arrays.toString(attachments) +
-                ", personsEntity='" + personsEntity + '\'' +
+                ", DType='" + DType + '\'' +
                 '}';
     }
 }

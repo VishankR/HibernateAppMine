@@ -8,16 +8,11 @@ import java.util.Collection;
 
 @Entity
 public class PurchaseorderstatusEntity extends StatusEntity {
-    private String purchaseOrderStatusEntity = "PurchaseOrderStatusEntity";
     @OneToMany(mappedBy = "ordersstatusByStatusId")
     private Collection<PurchaseordersEntity> purchaseordersById;
 
-    public String getPurchaseOrderStatusEntity() {
-        return purchaseOrderStatusEntity;
-    }
-
-    public void setPurchaseOrderStatusEntity(String purchaseOrderStatusEntity) {
-        this.purchaseOrderStatusEntity = purchaseOrderStatusEntity;
+    public PurchaseorderstatusEntity() {
+        this.setDType(this.getClass().getName());
     }
 
     public Collection<PurchaseordersEntity> getPurchaseordersById() {
@@ -31,7 +26,6 @@ public class PurchaseorderstatusEntity extends StatusEntity {
     @Override
     public String toString() {
         return "PurchaseorderstatusEntity{" +
-                "purchaseOrderStatusEntity='" + purchaseOrderStatusEntity + '\'' +
                 ", purchaseordersById=" + purchaseordersById +
                 '}';
     }

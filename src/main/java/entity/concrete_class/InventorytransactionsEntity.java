@@ -12,7 +12,7 @@ import java.util.Objects;
 
 @Entity
 public class InventorytransactionsEntity {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     @Id
     private int id;
     private Timestamp transactionCreatedDate;
@@ -33,6 +33,7 @@ public class InventorytransactionsEntity {
     private SellOrdersEntity sellOrdersByCustomerOrderId;
     @OneToMany(mappedBy = "inventorytransactionsByInventoryId")
     private Collection<PurchaseorderdetailsEntity> purchaseorderdetailsById;
+    private String DType;
 
     public int getId() {
         return id;
@@ -74,6 +75,17 @@ public class InventorytransactionsEntity {
         this.comments = comments;
     }
 
+    public String getDType() {
+        return DType;
+    }
+
+    public void setDType() {
+        this.DType = this.getClass().getName();
+    }
+
+    public void setDType(String DType) {
+        this.DType = DType;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

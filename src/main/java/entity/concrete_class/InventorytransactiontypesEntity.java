@@ -6,12 +6,13 @@ import java.util.Objects;
 
 @Entity
 public class InventorytransactiontypesEntity {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     @Id
     private byte id;
     private String typeName;
     @OneToMany(mappedBy = "inventorytransactiontypesByTransactionType")
     private Collection<InventorytransactionsEntity> inventorytransactionsById;
+    private String DType;
 
     public byte getId() {
         return id;
@@ -29,6 +30,17 @@ public class InventorytransactiontypesEntity {
         this.typeName = typeName;
     }
 
+    public String getDType() {
+        return DType;
+    }
+
+    public void setDType() {
+        this.DType = this.getClass().getName();
+    }
+
+    public void setDType(String DType) {
+        this.DType = DType;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

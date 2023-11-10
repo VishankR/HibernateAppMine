@@ -12,7 +12,6 @@ import java.util.Objects;
 
 @Entity
 public class PurchaseorderdetailsEntity extends DetailEntity {
-    private String purchaseOrderDetailsEntity = "PurchaseOrderDetailsEntity";
     private Timestamp dateReceived;
     private byte postedToInventory;
     @ManyToOne
@@ -24,6 +23,10 @@ public class PurchaseorderdetailsEntity extends DetailEntity {
     @ManyToOne
     @JoinColumn(name = "inventoryId", referencedColumnName = "id")
     private InventorytransactionsEntity inventorytransactionsByInventoryId;
+
+    public PurchaseorderdetailsEntity() {
+        this.setDType(this.getClass().getName());
+    }
 
     public Timestamp getDateReceived() {
         return dateReceived;
@@ -41,26 +44,18 @@ public class PurchaseorderdetailsEntity extends DetailEntity {
         this.postedToInventory = postedToInventory;
     }
 
-    public String getPurchaseOrderDetailsEntity() {
-        return purchaseOrderDetailsEntity;
-    }
-
-    public void setPurchaseOrderDetailsEntity(String purchaseOrderDetailsEntity) {
-        this.purchaseOrderDetailsEntity = purchaseOrderDetailsEntity;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof PurchaseorderdetailsEntity)) return false;
         if (!super.equals(o)) return false;
         PurchaseorderdetailsEntity that = (PurchaseorderdetailsEntity) o;
-        return getPostedToInventory() == that.getPostedToInventory() && Objects.equals(getPurchaseOrderDetailsEntity(), that.getPurchaseOrderDetailsEntity()) && Objects.equals(getDateReceived(), that.getDateReceived()) && Objects.equals(getPurchaseordersByPurchaseOrderId(), that.getPurchaseordersByPurchaseOrderId()) && Objects.equals(getProductsByProductId(), that.getProductsByProductId()) && Objects.equals(getInventorytransactionsByInventoryId(), that.getInventorytransactionsByInventoryId());
+        return getPostedToInventory() == that.getPostedToInventory() && Objects.equals(getDType(), that.getDType()) && Objects.equals(getDateReceived(), that.getDateReceived()) && Objects.equals(getPurchaseordersByPurchaseOrderId(), that.getPurchaseordersByPurchaseOrderId()) && Objects.equals(getProductsByProductId(), that.getProductsByProductId()) && Objects.equals(getInventorytransactionsByInventoryId(), that.getInventorytransactionsByInventoryId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), getPurchaseOrderDetailsEntity(), getDateReceived(), getPostedToInventory(), getPurchaseordersByPurchaseOrderId(), getProductsByProductId(), getInventorytransactionsByInventoryId());
+        return Objects.hash(super.hashCode(), getDType(), getDateReceived(), getPostedToInventory(), getPurchaseordersByPurchaseOrderId(), getProductsByProductId(), getInventorytransactionsByInventoryId());
     }
 
     public PurchaseordersEntity getPurchaseordersByPurchaseOrderId() {
@@ -90,7 +85,6 @@ public class PurchaseorderdetailsEntity extends DetailEntity {
     @Override
     public String toString() {
         return "PurchaseorderdetailsEntity{" +
-                "purchaseOrderDetailsEntity='" + purchaseOrderDetailsEntity + '\'' +
                 ", dateReceived=" + dateReceived +
                 ", postedToInventory=" + postedToInventory +
                 ", purchaseordersByPurchaseOrderId=" + purchaseordersByPurchaseOrderId +

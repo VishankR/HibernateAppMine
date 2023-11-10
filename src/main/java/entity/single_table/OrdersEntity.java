@@ -22,7 +22,7 @@ import java.util.Objects;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "OrderType")
 public abstract class OrdersEntity {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     @Id
     private int id;
     private Timestamp orderDate;
@@ -31,7 +31,7 @@ public abstract class OrdersEntity {
     private String paymentMethod;
     private Timestamp paymentDate;
     private String notes;
-    private String ordersEntity = "OrdersEntity";
+    private String DType;
     @OneToMany(mappedBy = "sellOrdersByCustomerOrderId")
     private Collection<InventorytransactionsEntity> inventorytransactionsById;
     @OneToMany(mappedBy = "sellOrdersByOrderId")
@@ -96,12 +96,16 @@ public abstract class OrdersEntity {
         this.notes = notes;
     }
 
-    public String getOrdersEntity() {
-        return ordersEntity;
+    public String getDType() {
+        return DType;
     }
 
-    public void setOrdersEntity(String ordersEntity) {
-        this.ordersEntity = ordersEntity;
+    public void setDType() {
+        this.DType = this.getClass().getName();
+    }
+
+    public void setDType(String DType) {
+        this.DType = DType;
     }
 
     @Override
@@ -109,12 +113,12 @@ public abstract class OrdersEntity {
         if (this == o) return true;
         if (!(o instanceof OrdersEntity)) return false;
         OrdersEntity that = (OrdersEntity) o;
-        return getId() == that.getId() && Objects.equals(getOrderDate(), that.getOrderDate()) && Objects.equals(getShippingFee(), that.getShippingFee()) && Objects.equals(getTaxes(), that.getTaxes()) && Objects.equals(getPaymentMethod(), that.getPaymentMethod()) && Objects.equals(getPaymentDate(), that.getPaymentDate()) && Objects.equals(getNotes(), that.getNotes()) && Objects.equals(getOrdersEntity(), that.getOrdersEntity()) && Objects.equals(getInventorytransactionsById(), that.getInventorytransactionsById()) && Objects.equals(getSellOrderdetailsById(), that.getSellOrderdetailsById()) && Objects.equals(getOrdersstatusByStatusId(), that.getOrdersstatusByStatusId());
+        return getId() == that.getId() && Objects.equals(getOrderDate(), that.getOrderDate()) && Objects.equals(getShippingFee(), that.getShippingFee()) && Objects.equals(getTaxes(), that.getTaxes()) && Objects.equals(getPaymentMethod(), that.getPaymentMethod()) && Objects.equals(getPaymentDate(), that.getPaymentDate()) && Objects.equals(getNotes(), that.getNotes()) && Objects.equals(getDType(), that.getDType()) && Objects.equals(getInventorytransactionsById(), that.getInventorytransactionsById()) && Objects.equals(getSellOrderdetailsById(), that.getSellOrderdetailsById()) && Objects.equals(getOrdersstatusByStatusId(), that.getOrdersstatusByStatusId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getOrderDate(), getShippingFee(), getTaxes(), getPaymentMethod(), getPaymentDate(), getNotes(), getOrdersEntity(), getInventorytransactionsById(), getSellOrderdetailsById(), getOrdersstatusByStatusId());
+        return Objects.hash(getId(), getOrderDate(), getShippingFee(), getTaxes(), getPaymentMethod(), getPaymentDate(), getNotes(), getDType(), getInventorytransactionsById(), getSellOrderdetailsById(), getOrdersstatusByStatusId());
     }
 
     public Collection<InventorytransactionsEntity> getInventorytransactionsById() {
@@ -151,7 +155,7 @@ public abstract class OrdersEntity {
                 ", paymentMethod='" + paymentMethod + '\'' +
                 ", paymentDate=" + paymentDate +
                 ", notes='" + notes + '\'' +
-                ", ordersEntity='" + ordersEntity + '\'' +
+                ", DType='" + DType + '\'' +
                 ", inventorytransactionsById=" + inventorytransactionsById +
                 ", sellOrderdetailsById=" + sellOrderdetailsById +
                 ", ordersstatusByStatusId=" + ordersstatusByStatusId +

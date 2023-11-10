@@ -15,7 +15,7 @@ import java.util.Objects;
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class DetailEntity {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     @Id
     private int id;
 
@@ -27,7 +27,7 @@ public abstract class DetailEntity {
 
     private Integer inventoryId;
 
-    private String detailEntity = "DetailEntity";
+    private String DType;
 
     public int getId() {
         return id;
@@ -69,12 +69,16 @@ public abstract class DetailEntity {
         this.inventoryId = inventoryId;
     }
 
-    public String getDetailEntity() {
-        return detailEntity;
+    public String getDType() {
+        return DType;
     }
 
-    public void setDetailEntity(String detailEntity) {
-        this.detailEntity = detailEntity;
+    public void setDType() {
+        this.DType = this.getClass().getName();
+    }
+
+    public void setDType(String DType) {
+        this.DType = DType;
     }
 
     @Override
@@ -82,12 +86,12 @@ public abstract class DetailEntity {
         if (this == o) return true;
         if (!(o instanceof DetailEntity)) return false;
         DetailEntity that = (DetailEntity) o;
-        return getId() == that.getId() && Objects.equals(getOrderId(), that.getOrderId()) && Objects.equals(getQuantity(), that.getQuantity()) && Objects.equals(getUnitPrice(), that.getUnitPrice()) && Objects.equals(getInventoryId(), that.getInventoryId()) && Objects.equals(getDetailEntity(), that.getDetailEntity());
+        return getId() == that.getId() && Objects.equals(getOrderId(), that.getOrderId()) && Objects.equals(getQuantity(), that.getQuantity()) && Objects.equals(getUnitPrice(), that.getUnitPrice()) && Objects.equals(getInventoryId(), that.getInventoryId()) && Objects.equals(getDType(), that.getDType());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getOrderId(), getQuantity(), getUnitPrice(), getInventoryId(), getDetailEntity());
+        return Objects.hash(getId(), getOrderId(), getQuantity(), getUnitPrice(), getInventoryId(), getDType());
     }
 
     @Override
@@ -98,7 +102,7 @@ public abstract class DetailEntity {
                 ", quantity=" + quantity +
                 ", unitPrice=" + unitPrice +
                 ", inventoryId=" + inventoryId +
-                ", detailEntity='" + detailEntity + '\'' +
+                ", DType='" + DType + '\'' +
                 '}';
     }
 }

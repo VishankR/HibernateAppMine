@@ -17,13 +17,13 @@ import java.util.Objects;
 @MappedSuperclass
 public abstract class StatusEntity {
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     @Id
     private int id;
 
     private String status;
 
-    private String statusEntity = "StatusEntity";
+    private String DType;
 
     public int getId() {
         return id;
@@ -41,12 +41,16 @@ public abstract class StatusEntity {
         this.status = status;
     }
 
-    public String getStatusEntity() {
-        return statusEntity;
+    public String getDType() {
+        return DType;
     }
 
-    public void setStatusEntity(String statusEntity) {
-        this.statusEntity = statusEntity;
+    public void setDType() {
+        this.DType = this.getClass().getName();
+    }
+
+    public void setDType(String DType) {
+        this.DType = DType;
     }
 
     @Override
@@ -54,12 +58,12 @@ public abstract class StatusEntity {
         if (this == o) return true;
         if (!(o instanceof StatusEntity)) return false;
         StatusEntity statusEntity1 = (StatusEntity) o;
-        return getId() == statusEntity1.getId() && Objects.equals(getStatus(), statusEntity1.getStatus()) && Objects.equals(getStatusEntity(), statusEntity1.getStatusEntity());
+        return getId() == statusEntity1.getId() && Objects.equals(getStatus(), statusEntity1.getStatus()) && Objects.equals(getDType(), statusEntity1.getDType());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getStatus(), getStatusEntity());
+        return Objects.hash(getId(), getStatus(), getDType());
     }
 
     @Override
@@ -67,7 +71,7 @@ public abstract class StatusEntity {
         return "StatusEntity{" +
                 "id=" + id +
                 ", status='" + status + '\'' +
-                ", statusEntity='" + statusEntity + '\'' +
+                ", DType='" + DType + '\'' +
                 '}';
     }
 }

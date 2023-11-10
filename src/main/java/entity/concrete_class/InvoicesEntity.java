@@ -10,7 +10,7 @@ import java.util.Objects;
 
 @Entity
 public class InvoicesEntity {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     @Id
     private int id;
     private Timestamp invoiceDate;
@@ -21,6 +21,7 @@ public class InvoicesEntity {
     @ManyToOne
     @JoinColumn(name = "orderId", referencedColumnName = "id")
     private SellOrdersEntity sellOrdersByOrderId;
+    private String DType;
 
     public int getId() {
         return id;
@@ -68,6 +69,18 @@ public class InvoicesEntity {
 
     public void setAmountDue(BigDecimal amountDue) {
         this.amountDue = amountDue;
+    }
+
+    public String getDType() {
+        return DType;
+    }
+
+    public void setDType() {
+        this.DType = this.getClass().getName();
+    }
+
+    public void setDType(String DType) {
+        this.DType = DType;
     }
 
     @Override

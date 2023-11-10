@@ -11,7 +11,7 @@ import java.util.Objects;
 
 @Entity
 public class ProductsEntity {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     @Id
     private int id;
     private String supplierIds;
@@ -33,6 +33,7 @@ public class ProductsEntity {
     private Collection<SellorderdetailsEntity> sellOrderdetailsById;
     @OneToMany(mappedBy = "productsByProductId")
     private Collection<PurchaseorderdetailsEntity> purchaseorderdetailsById;
+    private String DType;
 
     public int getId() {
         return id;
@@ -144,6 +145,18 @@ public class ProductsEntity {
 
     public void setAttachments(byte[] attachments) {
         this.attachments = attachments;
+    }
+
+    public String getDType() {
+        return DType;
+    }
+
+    public void setDType() {
+        this.DType = this.getClass().getName();
+    }
+
+    public void setDType(String DType) {
+        this.DType = DType;
     }
 
     @Override
